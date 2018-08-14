@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECA2C3E02122A9A90011EFD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */; };
+		ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C3E62122A9A90011EFD3 /* InnCloud.xcdatamodeld */; };
+		ECA2C3EA2122A9AA0011EFD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA2C3E92122A9AA0011EFD3 /* Assets.xcassets */; };
+		ECA2C3ED2122A9AA0011EFD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA2C3EB2122A9AA0011EFD3 /* LaunchScreen.storyboard */; };
+		ECA2C3F82122A9AA0011EFD3 /* InnCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C3F72122A9AA0011EFD3 /* InnCloudTests.swift */; };
+		ECA2C4032122A9AA0011EFD3 /* InnCloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C4022122A9AA0011EFD3 /* InnCloudUITests.swift */; };
+		ECA2C4162122B1580011EFD3 /* ICViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C4152122B1580011EFD3 /* ICViewController.swift */; };
+		ECA2C4192122B2160011EFD3 /* ICMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C4182122B2160011EFD3 /* ICMainTabBarController.swift */; };
+		ECA2C41B2122B8480011EFD3 /* ICNavigationControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C41A2122B8480011EFD3 /* ICNavigationControllerr.swift */; };
+		ECA2C4202122BE270011EFD3 /* ICRecommendationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C41E2122BE270011EFD3 /* ICRecommendationController.swift */; };
+		ECA2C4212122BE270011EFD3 /* ICRecommendationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA2C41F2122BE270011EFD3 /* ICRecommendationController.xib */; };
+		ECA2C4232122CEE10011EFD3 /* ICCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C4222122CEE10011EFD3 /* ICCollectionView.swift */; };
+		ECA2C4252122CEFF0011EFD3 /* ICCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C4242122CEFF0011EFD3 /* ICCollectionViewCell.swift */; };
+		ECA2C4292122DA350011EFD3 /* ICInnListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C4282122DA350011EFD3 /* ICInnListView.swift */; };
+		ECA2C42C2122DA530011EFD3 /* ICInnListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C42A2122DA530011EFD3 /* ICInnListViewCell.swift */; };
+		ECA2C42D2122DA530011EFD3 /* ICInnListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA2C42B2122DA530011EFD3 /* ICInnListViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA2C3F42122A9AA0011EFD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA2C3D42122A9A90011EFD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA2C3DB2122A9A90011EFD3;
+			remoteInfo = InnCloud;
+		};
+		ECA2C3FF2122A9AA0011EFD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA2C3D42122A9A90011EFD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA2C3DB2122A9A90011EFD3;
+			remoteInfo = InnCloud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECA2C3DC2122A9A90011EFD3 /* InnCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECA2C3E72122A9A90011EFD3 /* InnCloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InnCloud.xcdatamodel; sourceTree = "<group>"; };
+		ECA2C3E92122A9AA0011EFD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECA2C3EC2122A9AA0011EFD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECA2C3EE2122A9AA0011EFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA2C3F32122A9AA0011EFD3 /* InnCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InnCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA2C3F72122A9AA0011EFD3 /* InnCloudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnCloudTests.swift; sourceTree = "<group>"; };
+		ECA2C3F92122A9AA0011EFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA2C3FE2122A9AA0011EFD3 /* InnCloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InnCloudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA2C4022122A9AA0011EFD3 /* InnCloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnCloudUITests.swift; sourceTree = "<group>"; };
+		ECA2C4042122A9AA0011EFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA2C4152122B1580011EFD3 /* ICViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICViewController.swift; sourceTree = "<group>"; };
+		ECA2C4182122B2160011EFD3 /* ICMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICMainTabBarController.swift; sourceTree = "<group>"; };
+		ECA2C41A2122B8480011EFD3 /* ICNavigationControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICNavigationControllerr.swift; sourceTree = "<group>"; };
+		ECA2C41E2122BE270011EFD3 /* ICRecommendationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICRecommendationController.swift; sourceTree = "<group>"; };
+		ECA2C41F2122BE270011EFD3 /* ICRecommendationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICRecommendationController.xib; sourceTree = "<group>"; };
+		ECA2C4222122CEE10011EFD3 /* ICCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICCollectionView.swift; sourceTree = "<group>"; };
+		ECA2C4242122CEFF0011EFD3 /* ICCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECA2C4282122DA350011EFD3 /* ICInnListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInnListView.swift; sourceTree = "<group>"; };
+		ECA2C42A2122DA530011EFD3 /* ICInnListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInnListViewCell.swift; sourceTree = "<group>"; };
+		ECA2C42B2122DA530011EFD3 /* ICInnListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICInnListViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECA2C3D92122A9A90011EFD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA2C3F02122A9AA0011EFD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA2C3FB2122A9AA0011EFD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECA2C3D32122A9A90011EFD3 = {
+			isa = PBXGroup;
+			children = (
+				ECA2C3DE2122A9A90011EFD3 /* InnCloud */,
+				ECA2C3F62122A9AA0011EFD3 /* InnCloudTests */,
+				ECA2C4012122A9AA0011EFD3 /* InnCloudUITests */,
+				ECA2C3DD2122A9A90011EFD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA2C3DD2122A9A90011EFD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C3DC2122A9A90011EFD3 /* InnCloud.app */,
+				ECA2C3F32122A9AA0011EFD3 /* InnCloudTests.xctest */,
+				ECA2C3FE2122A9AA0011EFD3 /* InnCloudUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA2C3DE2122A9A90011EFD3 /* InnCloud */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C4102122ABBA0011EFD3 /* Module */,
+				ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */,
+				ECA2C3E92122A9AA0011EFD3 /* Assets.xcassets */,
+				ECA2C3EB2122A9AA0011EFD3 /* LaunchScreen.storyboard */,
+				ECA2C3EE2122A9AA0011EFD3 /* Info.plist */,
+				ECA2C3E62122A9A90011EFD3 /* InnCloud.xcdatamodeld */,
+			);
+			path = InnCloud;
+			sourceTree = "<group>";
+		};
+		ECA2C3F62122A9AA0011EFD3 /* InnCloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C3F72122A9AA0011EFD3 /* InnCloudTests.swift */,
+				ECA2C3F92122A9AA0011EFD3 /* Info.plist */,
+			);
+			path = InnCloudTests;
+			sourceTree = "<group>";
+		};
+		ECA2C4012122A9AA0011EFD3 /* InnCloudUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C4022122A9AA0011EFD3 /* InnCloudUITests.swift */,
+				ECA2C4042122A9AA0011EFD3 /* Info.plist */,
+			);
+			path = InnCloudUITests;
+			sourceTree = "<group>";
+		};
+		ECA2C4102122ABBA0011EFD3 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C4112122B0EA0011EFD3 /* Base */,
+				ECA2C4172122B1E20011EFD3 /* Main */,
+				ECA2C4262122D9640011EFD3 /* Commons */,
+				ECA2C41C2122BDE80011EFD3 /* Recommendation */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		ECA2C4112122B0EA0011EFD3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C4122122B1150011EFD3 /* Controller */,
+				ECA2C4142122B1320011EFD3 /* View */,
+				ECA2C4132122B1240011EFD3 /* Model */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		ECA2C4122122B1150011EFD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C41A2122B8480011EFD3 /* ICNavigationControllerr.swift */,
+				ECA2C4152122B1580011EFD3 /* ICViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECA2C4132122B1240011EFD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECA2C4142122B1320011EFD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C4222122CEE10011EFD3 /* ICCollectionView.swift */,
+				ECA2C4242122CEFF0011EFD3 /* ICCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECA2C4172122B1E20011EFD3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C4182122B2160011EFD3 /* ICMainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ECA2C41C2122BDE80011EFD3 /* Recommendation */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C41D2122BDF70011EFD3 /* Controller */,
+			);
+			path = Recommendation;
+			sourceTree = "<group>";
+		};
+		ECA2C41D2122BDF70011EFD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C41E2122BE270011EFD3 /* ICRecommendationController.swift */,
+				ECA2C41F2122BE270011EFD3 /* ICRecommendationController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECA2C4262122D9640011EFD3 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C4272122DA110011EFD3 /* InnList */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		ECA2C4272122DA110011EFD3 /* InnList */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C4282122DA350011EFD3 /* ICInnListView.swift */,
+				ECA2C42A2122DA530011EFD3 /* ICInnListViewCell.swift */,
+				ECA2C42B2122DA530011EFD3 /* ICInnListViewCell.xib */,
+			);
+			path = InnList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECA2C3DB2122A9A90011EFD3 /* InnCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA2C4072122A9AA0011EFD3 /* Build configuration list for PBXNativeTarget "InnCloud" */;
+			buildPhases = (
+				ECA2C3D82122A9A90011EFD3 /* Sources */,
+				ECA2C3D92122A9A90011EFD3 /* Frameworks */,
+				ECA2C3DA2122A9A90011EFD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InnCloud;
+			productName = InnCloud;
+			productReference = ECA2C3DC2122A9A90011EFD3 /* InnCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECA2C3F22122A9AA0011EFD3 /* InnCloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA2C40A2122A9AA0011EFD3 /* Build configuration list for PBXNativeTarget "InnCloudTests" */;
+			buildPhases = (
+				ECA2C3EF2122A9AA0011EFD3 /* Sources */,
+				ECA2C3F02122A9AA0011EFD3 /* Frameworks */,
+				ECA2C3F12122A9AA0011EFD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA2C3F52122A9AA0011EFD3 /* PBXTargetDependency */,
+			);
+			name = InnCloudTests;
+			productName = InnCloudTests;
+			productReference = ECA2C3F32122A9AA0011EFD3 /* InnCloudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECA2C3FD2122A9AA0011EFD3 /* InnCloudUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA2C40D2122A9AA0011EFD3 /* Build configuration list for PBXNativeTarget "InnCloudUITests" */;
+			buildPhases = (
+				ECA2C3FA2122A9AA0011EFD3 /* Sources */,
+				ECA2C3FB2122A9AA0011EFD3 /* Frameworks */,
+				ECA2C3FC2122A9AA0011EFD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA2C4002122A9AA0011EFD3 /* PBXTargetDependency */,
+			);
+			name = InnCloudUITests;
+			productName = InnCloudUITests;
+			productReference = ECA2C3FE2122A9AA0011EFD3 /* InnCloudUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECA2C3D42122A9A90011EFD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IC;
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Emrys;
+				TargetAttributes = {
+					ECA2C3DB2122A9A90011EFD3 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					ECA2C3F22122A9AA0011EFD3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = ECA2C3DB2122A9A90011EFD3;
+					};
+					ECA2C3FD2122A9AA0011EFD3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = ECA2C3DB2122A9A90011EFD3;
+					};
+				};
+			};
+			buildConfigurationList = ECA2C3D72122A9A90011EFD3 /* Build configuration list for PBXProject "InnCloud" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECA2C3D32122A9A90011EFD3;
+			productRefGroup = ECA2C3DD2122A9A90011EFD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECA2C3DB2122A9A90011EFD3 /* InnCloud */,
+				ECA2C3F22122A9AA0011EFD3 /* InnCloudTests */,
+				ECA2C3FD2122A9AA0011EFD3 /* InnCloudUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECA2C3DA2122A9A90011EFD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA2C4212122BE270011EFD3 /* ICRecommendationController.xib in Resources */,
+				ECA2C3ED2122A9AA0011EFD3 /* LaunchScreen.storyboard in Resources */,
+				ECA2C42D2122DA530011EFD3 /* ICInnListViewCell.xib in Resources */,
+				ECA2C3EA2122A9AA0011EFD3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA2C3F12122A9AA0011EFD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA2C3FC2122A9AA0011EFD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA2C3D82122A9A90011EFD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA2C4252122CEFF0011EFD3 /* ICCollectionViewCell.swift in Sources */,
+				ECA2C4192122B2160011EFD3 /* ICMainTabBarController.swift in Sources */,
+				ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */,
+				ECA2C4232122CEE10011EFD3 /* ICCollectionView.swift in Sources */,
+				ECA2C4162122B1580011EFD3 /* ICViewController.swift in Sources */,
+				ECA2C4292122DA350011EFD3 /* ICInnListView.swift in Sources */,
+				ECA2C42C2122DA530011EFD3 /* ICInnListViewCell.swift in Sources */,
+				ECA2C41B2122B8480011EFD3 /* ICNavigationControllerr.swift in Sources */,
+				ECA2C4202122BE270011EFD3 /* ICRecommendationController.swift in Sources */,
+				ECA2C3E02122A9A90011EFD3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA2C3EF2122A9AA0011EFD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA2C3F82122A9AA0011EFD3 /* InnCloudTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA2C3FA2122A9AA0011EFD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA2C4032122A9AA0011EFD3 /* InnCloudUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA2C3F52122A9AA0011EFD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA2C3DB2122A9A90011EFD3 /* InnCloud */;
+			targetProxy = ECA2C3F42122A9AA0011EFD3 /* PBXContainerItemProxy */;
+		};
+		ECA2C4002122A9AA0011EFD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA2C3DB2122A9A90011EFD3 /* InnCloud */;
+			targetProxy = ECA2C3FF2122A9AA0011EFD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECA2C3EB2122A9AA0011EFD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA2C3EC2122A9AA0011EFD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECA2C4052122A9AA0011EFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECA2C4062122A9AA0011EFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECA2C4082122A9AA0011EFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InnCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECA2C4092122A9AA0011EFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InnCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECA2C40B2122A9AA0011EFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InnCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InnCloud.app/InnCloud";
+			};
+			name = Debug;
+		};
+		ECA2C40C2122A9AA0011EFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InnCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InnCloud.app/InnCloud";
+			};
+			name = Release;
+		};
+		ECA2C40E2122A9AA0011EFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InnCloudUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InnCloud;
+			};
+			name = Debug;
+		};
+		ECA2C40F2122A9AA0011EFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InnCloudUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InnCloud;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECA2C3D72122A9A90011EFD3 /* Build configuration list for PBXProject "InnCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA2C4052122A9AA0011EFD3 /* Debug */,
+				ECA2C4062122A9AA0011EFD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA2C4072122A9AA0011EFD3 /* Build configuration list for PBXNativeTarget "InnCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA2C4082122A9AA0011EFD3 /* Debug */,
+				ECA2C4092122A9AA0011EFD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA2C40A2122A9AA0011EFD3 /* Build configuration list for PBXNativeTarget "InnCloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA2C40B2122A9AA0011EFD3 /* Debug */,
+				ECA2C40C2122A9AA0011EFD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA2C40D2122A9AA0011EFD3 /* Build configuration list for PBXNativeTarget "InnCloudUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA2C40E2122A9AA0011EFD3 /* Debug */,
+				ECA2C40F2122A9AA0011EFD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECA2C3E62122A9A90011EFD3 /* InnCloud.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECA2C3E72122A9A90011EFD3 /* InnCloud.xcdatamodel */,
+			);
+			currentVersion = ECA2C3E72122A9A90011EFD3 /* InnCloud.xcdatamodel */;
+			path = InnCloud.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECA2C3D42122A9A90011EFD3 /* Project object */;
+}

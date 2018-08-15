@@ -15,6 +15,7 @@ class ICMainTabBarController: UITabBarController {
         
         let mainTabBarCtrl = ICMainTabBarController()
         
+        mainTabBarCtrl.tabBar.tintColor = UIColor.darkGray
         mainTabBarCtrl.initialChildren()
         
         return mainTabBarCtrl
@@ -22,9 +23,20 @@ class ICMainTabBarController: UITabBarController {
     
     private func initialChildren() {
         
-        addChildViewController(ICNavigationControllerr(rootViewController: ICViewController()))
-        addChildViewController(ICViewController())
-        addChildViewController(ICNavigationControllerr(rootViewController: ICViewController()))
+//        addChildViewController(ICNavigationControllerr(rootViewController: ICRecommendationController()))
+//        addChildViewController(ICRecommendationController())
+//        addChildViewController(ICNavigationControllerr(rootViewController: ICViewController()))
+        addChildInnController(ICRecommendationController(), tabBarTitle: "推荐", imageName: "icon_home_unclick", selectedImage: "icon_home_light")
+        addChildInnController(ICPertinentController(), tabBarTitle: "关注", imageName: "icon_special_unclick", selectedImage: "icon_special_click")
+        addChildInnController(ICPersonalCenterController(), tabBarTitle: "我", imageName: "icon_mine_unclick", selectedImage: "icon_mine_click")
+    }
+    
+    private func addChildInnController(_ childController: UIViewController, tabBarTitle: String, imageName: String, selectedImage: String) {
+        childController.tabBarItem.title = tabBarTitle
+        childController.tabBarItem.image = UIImage(named: imageName)
+        childController.tabBarItem.selectedImage = UIImage(named: selectedImage)
+        
+        addChildViewController(ICNavigationControllerr(rootViewController: childController))
     }
     
     override func viewDidLoad() {

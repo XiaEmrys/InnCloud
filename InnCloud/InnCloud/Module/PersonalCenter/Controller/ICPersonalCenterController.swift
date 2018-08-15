@@ -1,28 +1,27 @@
 //
-//  ICRecommendationController.swift
+//  ICPersonalCenterController.swift
 //  InnCloud
 //
-//  Created by Emrys on 2018/8/14.
+//  Created by Emrys on 2018/8/15.
 //  Copyright © 2018年 Emrys. All rights reserved.
 //
 
 import UIKit
 
-class ICRecommendationController: ICViewController {
-    
+class ICPersonalCenterController: ICViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "云主页"
+        navigationItem.title = "个人中心"
         
-        let innListView = ICInnListView.innListView(frame: CGRect.zero)
+        let personalCenterContentView = ICTableView(frame: CGRect.zero)
         
-        view.addSubview(innListView)
+        view.addSubview(personalCenterContentView)
         
-        innListView.snp.makeConstraints { (make) in
+        personalCenterContentView.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalTo(0)
         }
-        
     }
 
     override func didReceiveMemoryWarning() {

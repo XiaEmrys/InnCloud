@@ -10,6 +10,13 @@
 		0DF87B65959F11CA6C6B3292 /* Pods_InnCloudUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC0638ECDEBFC7EEC55C547 /* Pods_InnCloudUITests.framework */; };
 		1F36643D79C84E2BD82457DE /* Pods_InnCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C02E660E63D9E71E97CE4F /* Pods_InnCloud.framework */; };
 		DBBF04F114C5955E9C3933FA /* Pods_InnCloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400664CD8F2BFDD918C38A8F /* Pods_InnCloudTests.framework */; };
+		EC0678B92123D43400DF0466 /* VendorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678B82123D43400DF0466 /* VendorHeader.swift */; };
+		EC0678BE2124034600DF0466 /* ICPertinentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678BC2124034600DF0466 /* ICPertinentController.swift */; };
+		EC0678BF2124034600DF0466 /* ICPertinentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0678BD2124034600DF0466 /* ICPertinentController.xib */; };
+		EC0678C42124044900DF0466 /* ICPersonalCenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678C22124044900DF0466 /* ICPersonalCenterController.swift */; };
+		EC0678C52124044900DF0466 /* ICPersonalCenterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0678C32124044900DF0466 /* ICPersonalCenterController.xib */; };
+		EC0678C72124092900DF0466 /* ICTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678C62124092900DF0466 /* ICTableView.swift */; };
+		EC0678C92124094300DF0466 /* ICTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678C82124094300DF0466 /* ICTableViewCell.swift */; };
 		ECA2C3E02122A9A90011EFD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */; };
 		ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C3E62122A9A90011EFD3 /* InnCloud.xcdatamodeld */; };
 		ECA2C3EA2122A9AA0011EFD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA2C3E92122A9AA0011EFD3 /* Assets.xcassets */; };
@@ -54,6 +61,13 @@
 		64EA03146FD4102DF8CC2AC5 /* Pods-InnCloudUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnCloudUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InnCloudUITests/Pods-InnCloudUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9995DE2BA31FB57848033178 /* Pods-InnCloudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnCloudTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InnCloudTests/Pods-InnCloudTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB5B511408374117A58FE0BD /* Pods-InnCloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnCloudTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InnCloudTests/Pods-InnCloudTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC0678B82123D43400DF0466 /* VendorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorHeader.swift; sourceTree = "<group>"; };
+		EC0678BC2124034600DF0466 /* ICPertinentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICPertinentController.swift; sourceTree = "<group>"; };
+		EC0678BD2124034600DF0466 /* ICPertinentController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICPertinentController.xib; sourceTree = "<group>"; };
+		EC0678C22124044900DF0466 /* ICPersonalCenterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICPersonalCenterController.swift; sourceTree = "<group>"; };
+		EC0678C32124044900DF0466 /* ICPersonalCenterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICPersonalCenterController.xib; sourceTree = "<group>"; };
+		EC0678C62124092900DF0466 /* ICTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTableView.swift; sourceTree = "<group>"; };
+		EC0678C82124094300DF0466 /* ICTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTableViewCell.swift; sourceTree = "<group>"; };
 		ECA2C3DC2122A9A90011EFD3 /* InnCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA2C3E72122A9A90011EFD3 /* InnCloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InnCloud.xcdatamodel; sourceTree = "<group>"; };
@@ -130,6 +144,56 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EC0678B62123D40E00DF0466 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				EC0678B72123D42000DF0466 /* Vendor */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		EC0678B72123D42000DF0466 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				EC0678B82123D43400DF0466 /* VendorHeader.swift */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		EC0678BA212402ED00DF0466 /* Pertinent */ = {
+			isa = PBXGroup;
+			children = (
+				EC0678BB2124032B00DF0466 /* Controller */,
+			);
+			path = Pertinent;
+			sourceTree = "<group>";
+		};
+		EC0678BB2124032B00DF0466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC0678BC2124034600DF0466 /* ICPertinentController.swift */,
+				EC0678BD2124034600DF0466 /* ICPertinentController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC0678C02124040F00DF0466 /* PersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				EC0678C12124042C00DF0466 /* Controller */,
+			);
+			path = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		EC0678C12124042C00DF0466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC0678C22124044900DF0466 /* ICPersonalCenterController.swift */,
+				EC0678C32124044900DF0466 /* ICPersonalCenterController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		ECA2C3D32122A9A90011EFD3 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +219,7 @@
 		ECA2C3DE2122A9A90011EFD3 /* InnCloud */ = {
 			isa = PBXGroup;
 			children = (
+				EC0678B62123D40E00DF0466 /* Public */,
 				ECA2C4102122ABBA0011EFD3 /* Module */,
 				ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */,
 				ECA2C3E92122A9AA0011EFD3 /* Assets.xcassets */,
@@ -190,6 +255,8 @@
 				ECA2C4172122B1E20011EFD3 /* Main */,
 				ECA2C4262122D9640011EFD3 /* Commons */,
 				ECA2C41C2122BDE80011EFD3 /* Recommendation */,
+				EC0678BA212402ED00DF0466 /* Pertinent */,
+				EC0678C02124040F00DF0466 /* PersonalCenter */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -225,6 +292,8 @@
 			children = (
 				ECA2C4222122CEE10011EFD3 /* ICCollectionView.swift */,
 				ECA2C4242122CEFF0011EFD3 /* ICCollectionViewCell.swift */,
+				EC0678C62124092900DF0466 /* ICTableView.swift */,
+				EC0678C82124094300DF0466 /* ICTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,6 +452,8 @@
 			files = (
 				ECA2C4212122BE270011EFD3 /* ICRecommendationController.xib in Resources */,
 				ECA2C3ED2122A9AA0011EFD3 /* LaunchScreen.storyboard in Resources */,
+				EC0678C52124044900DF0466 /* ICPersonalCenterController.xib in Resources */,
+				EC0678BF2124034600DF0466 /* ICPertinentController.xib in Resources */,
 				ECA2C42D2122DA530011EFD3 /* ICInnListViewCell.xib in Resources */,
 				ECA2C3EA2122A9AA0011EFD3 /* Assets.xcassets in Resources */,
 			);
@@ -484,8 +555,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0678C92124094300DF0466 /* ICTableViewCell.swift in Sources */,
 				ECA2C4252122CEFF0011EFD3 /* ICCollectionViewCell.swift in Sources */,
 				ECA2C4192122B2160011EFD3 /* ICMainTabBarController.swift in Sources */,
+				EC0678B92123D43400DF0466 /* VendorHeader.swift in Sources */,
+				EC0678C72124092900DF0466 /* ICTableView.swift in Sources */,
+				EC0678C42124044900DF0466 /* ICPersonalCenterController.swift in Sources */,
+				EC0678BE2124034600DF0466 /* ICPertinentController.swift in Sources */,
 				ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */,
 				ECA2C4232122CEE10011EFD3 /* ICCollectionView.swift in Sources */,
 				ECA2C4162122B1580011EFD3 /* ICViewController.swift in Sources */,

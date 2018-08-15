@@ -17,6 +17,8 @@
 		EC0678C52124044900DF0466 /* ICPersonalCenterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0678C32124044900DF0466 /* ICPersonalCenterController.xib */; };
 		EC0678C72124092900DF0466 /* ICTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678C62124092900DF0466 /* ICTableView.swift */; };
 		EC0678C92124094300DF0466 /* ICTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678C82124094300DF0466 /* ICTableViewCell.swift */; };
+		EC0678D02124231800DF0466 /* ICListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678CF2124231800DF0466 /* ICListDataSource.swift */; };
+		EC0678D3212431D100DF0466 /* ICInnListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678D2212431D100DF0466 /* ICInnListDataSource.swift */; };
 		ECA2C3E02122A9A90011EFD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */; };
 		ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C3E62122A9A90011EFD3 /* InnCloud.xcdatamodeld */; };
 		ECA2C3EA2122A9AA0011EFD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA2C3E92122A9AA0011EFD3 /* Assets.xcassets */; };
@@ -68,6 +70,8 @@
 		EC0678C32124044900DF0466 /* ICPersonalCenterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICPersonalCenterController.xib; sourceTree = "<group>"; };
 		EC0678C62124092900DF0466 /* ICTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTableView.swift; sourceTree = "<group>"; };
 		EC0678C82124094300DF0466 /* ICTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTableViewCell.swift; sourceTree = "<group>"; };
+		EC0678CF2124231800DF0466 /* ICListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICListDataSource.swift; sourceTree = "<group>"; };
+		EC0678D2212431D100DF0466 /* ICInnListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInnListDataSource.swift; sourceTree = "<group>"; };
 		ECA2C3DC2122A9A90011EFD3 /* InnCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA2C3E72122A9A90011EFD3 /* InnCloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InnCloud.xcdatamodel; sourceTree = "<group>"; };
@@ -194,6 +198,38 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		EC0678CA2124112000DF0466 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2C42A2122DA530011EFD3 /* ICInnListViewCell.swift */,
+				ECA2C42B2122DA530011EFD3 /* ICInnListViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EC0678CB2124113700DF0466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC0678CC212420C200DF0466 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EC0678CF2124231800DF0466 /* ICListDataSource.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EC0678D12124318400DF0466 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EC0678D2212431D100DF0466 /* ICInnListDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		ECA2C3D32122A9A90011EFD3 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +300,7 @@
 		ECA2C4112122B0EA0011EFD3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				EC0678CC212420C200DF0466 /* Other */,
 				ECA2C4122122B1150011EFD3 /* Controller */,
 				ECA2C4142122B1320011EFD3 /* View */,
 				ECA2C4132122B1240011EFD3 /* Model */,
@@ -335,8 +372,9 @@
 			isa = PBXGroup;
 			children = (
 				ECA2C4282122DA350011EFD3 /* ICInnListView.swift */,
-				ECA2C42A2122DA530011EFD3 /* ICInnListViewCell.swift */,
-				ECA2C42B2122DA530011EFD3 /* ICInnListViewCell.xib */,
+				EC0678D12124318400DF0466 /* DataSource */,
+				EC0678CA2124112000DF0466 /* Cell */,
+				EC0678CB2124113700DF0466 /* Model */,
 			);
 			path = InnList;
 			sourceTree = "<group>";
@@ -556,9 +594,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0678C92124094300DF0466 /* ICTableViewCell.swift in Sources */,
+				EC0678D3212431D100DF0466 /* ICInnListDataSource.swift in Sources */,
 				ECA2C4252122CEFF0011EFD3 /* ICCollectionViewCell.swift in Sources */,
 				ECA2C4192122B2160011EFD3 /* ICMainTabBarController.swift in Sources */,
 				EC0678B92123D43400DF0466 /* VendorHeader.swift in Sources */,
+				EC0678D02124231800DF0466 /* ICListDataSource.swift in Sources */,
 				EC0678C72124092900DF0466 /* ICTableView.swift in Sources */,
 				EC0678C42124044900DF0466 /* ICPersonalCenterController.swift in Sources */,
 				EC0678BE2124034600DF0466 /* ICPertinentController.swift in Sources */,

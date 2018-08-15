@@ -10,6 +10,8 @@ import UIKit
 
 class ICInnListView: ICCollectionView {
 
+    
+    
     static func innListView(frame: CGRect) -> ICInnListView {
         
         let layout = UICollectionViewFlowLayout()

@@ -21,6 +21,7 @@
 		EC0678D3212431D100DF0466 /* ICInnListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678D2212431D100DF0466 /* ICInnListDataSource.swift */; };
 		EC59807C21254C7A00547E3E /* ICViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59807B21254C7A00547E3E /* ICViewModel.swift */; };
 		EC59807E21256C4300547E3E /* ICInnListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59807D21256C4300547E3E /* ICInnListCellModel.swift */; };
+		EC59808121257F0300547E3E /* ICTopicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59808021257F0300547E3E /* ICTopicListView.swift */; };
 		ECA2C3E02122A9A90011EFD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */; };
 		ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECA2C3E62122A9A90011EFD3 /* InnCloud.xcdatamodeld */; };
 		ECA2C3EA2122A9AA0011EFD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA2C3E92122A9AA0011EFD3 /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		EC0678D2212431D100DF0466 /* ICInnListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInnListDataSource.swift; sourceTree = "<group>"; };
 		EC59807B21254C7A00547E3E /* ICViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICViewModel.swift; sourceTree = "<group>"; };
 		EC59807D21256C4300547E3E /* ICInnListCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInnListCellModel.swift; sourceTree = "<group>"; };
+		EC59808021257F0300547E3E /* ICTopicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListView.swift; sourceTree = "<group>"; };
 		ECA2C3DC2122A9A90011EFD3 /* InnCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA2C3E72122A9A90011EFD3 /* InnCloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InnCloud.xcdatamodel; sourceTree = "<group>"; };
@@ -235,6 +237,38 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		EC59807F21257CA300547E3E /* TopicList */ = {
+			isa = PBXGroup;
+			children = (
+				EC59808021257F0300547E3E /* ICTopicListView.swift */,
+				EC598082212580D300547E3E /* DataSource */,
+				EC59808421258A6B00547E3E /* Cell */,
+				EC59808321258A6800547E3E /* Model */,
+			);
+			path = TopicList;
+			sourceTree = "<group>";
+		};
+		EC598082212580D300547E3E /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		EC59808321258A6800547E3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC59808421258A6B00547E3E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		ECA2C3D32122A9A90011EFD3 = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				ECA2C4272122DA110011EFD3 /* InnList */,
+				EC59807F21257CA300547E3E /* TopicList */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -605,6 +640,7 @@
 				ECA2C4192122B2160011EFD3 /* ICMainTabBarController.swift in Sources */,
 				EC0678B92123D43400DF0466 /* VendorHeader.swift in Sources */,
 				EC0678D02124231800DF0466 /* ICListDataSource.swift in Sources */,
+				EC59808121257F0300547E3E /* ICTopicListView.swift in Sources */,
 				EC59807C21254C7A00547E3E /* ICViewModel.swift in Sources */,
 				EC0678C72124092900DF0466 /* ICTableView.swift in Sources */,
 				EC0678C42124044900DF0466 /* ICPersonalCenterController.swift in Sources */,

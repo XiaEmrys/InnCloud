@@ -19,6 +19,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="122" height="91"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xDu-Sw-PRb">
+                        <rect key="frame" x="0.0" y="0.0" width="122" height="91"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhZ-hr-6cp">
                         <rect key="frame" x="43.5" y="35" width="35" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -27,13 +30,20 @@
                     </label>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.77668496580000002" green="1" blue="0.72785374489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="xDu-Sw-PRb" secondAttribute="trailing" id="18K-iI-GX4"/>
+                <constraint firstItem="xDu-Sw-PRb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8Qr-qq-1VO"/>
                 <constraint firstItem="KhZ-hr-6cp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="CK8-Hu-MFD"/>
+                <constraint firstAttribute="bottom" secondItem="xDu-Sw-PRb" secondAttribute="bottom" id="Mgx-pk-ArZ"/>
                 <constraint firstItem="KhZ-hr-6cp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bI6-lL-Kai"/>
+                <constraint firstItem="xDu-Sw-PRb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ucW-oa-XIc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="122" height="91"/>
+            <connections>
+                <outlet property="innTitleImageView" destination="xDu-Sw-PRb" id="ZKL-nx-6Qa"/>
+                <outlet property="innTitleLabel" destination="KhZ-hr-6cp" id="QvB-hl-QCo"/>
+            </connections>
             <point key="canvasLocation" x="61" y="41.5"/>
         </collectionViewCell>
     </objects>

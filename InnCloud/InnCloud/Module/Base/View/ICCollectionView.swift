@@ -9,13 +9,60 @@
 import UIKit
 
 class ICCollectionView: UICollectionView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    var listDataSource: ICListDataSource? {
+        didSet {
+            dataSource = self
+            delegate = self
+        }
     }
-    */
 
+    static func collectionView(frame: CGRect, layout: UICollectionViewLayout, listDataSource: ICListDataSource) -> ICCollectionView {
+        let collectionView = ICCollectionView(frame: frame, collectionViewLayout: layout)
+        collectionView.listDataSource = listDataSource
+        
+        return collectionView
+    }
+    
+    // MARK: - Method
+    func reuseIdentifierForCell() -> String {
+        return ICCollectionViewCell.identifierForCell()
+    }
+    
+}
+
+extension ICCollectionView: UICollectionViewDataSource, UICollectionViewDelegate {
+    // MARK: - UICollectionViewDelegate
+    // MARK: - UICollectionViewDataSource
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if let _ = listDataSource {
+            return listDataSource!.sectionSource.count
+        } else {
+            return 0
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if let _ = listDataSource {
+            
+            let items = listDataSource!.sectionSource[section]
+            
+            if items.count > 0 {
+                return items.count
+            } else {
+                return 0
+            }
+        } else {
+            return 0
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if let cell: ICCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifierForCell(), for: indexPath) as? ICCollectionViewCell {
+            let items = listDataSource!.sectionSource[indexPath.section]
+            cell.cellModel = items[indexPath.row]
+            return cell
+        } else {
+            return ICCollectionViewCell()
+        }
+    }
 }

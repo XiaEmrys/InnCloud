@@ -16,7 +16,5 @@ class ICListDataSource: NSObject {
 //    let rowCount: Int = {
 //        return 0
 //    }()
-    var sectionSource = [Array<Any>]()
-    var rowSource = [Any]()
-    
+    var sectionSource = [[ICViewModel]]()
 }

@@ -10,4 +10,9 @@ import UIKit
 
 class ICCollectionViewCell: UICollectionViewCell {
     
+    var cellModel: ICViewModel?
+    
+    class func identifierForCell() -> String {
+        return ""
+    }
 }

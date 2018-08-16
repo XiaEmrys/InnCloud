@@ -10,9 +10,24 @@ import UIKit
 
 class ICInnListViewCell: ICCollectionViewCell {
 
+    @IBOutlet weak var innTitleLabel: UILabel!
+    @IBOutlet weak var innTitleImageView: UIImageView!
+    override class func identifierForCell() -> String {
+        return "cell_id"
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    override var cellModel: ICViewModel? {
+        didSet {
+            if let t: ICInnListCellModel = cellModel as? ICInnListCellModel {
+                innTitleLabel.text = t.innTitle
+                innTitleImageView.image = UIImage(named: t.innImageName!)
+            }
+        }
     }
 
 }

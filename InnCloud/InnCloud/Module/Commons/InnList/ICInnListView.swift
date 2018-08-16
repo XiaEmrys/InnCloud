@@ -9,8 +9,6 @@
 import UIKit
 
 class ICInnListView: ICCollectionView {
-
-    
     
     static func innListView(frame: CGRect) -> ICInnListView {
         
@@ -22,12 +20,11 @@ class ICInnListView: ICCollectionView {
         
         let innListView = ICInnListView(frame: frame, collectionViewLayout: layout)
         
+        innListView.listDataSource = ICInnListDataSource()
+        
         innListView.backgroundColor = UIColor.white
         
-        innListView.dataSource = innListView
-        innListView.delegate = innListView
-        
-        innListView.register(UINib.init(nibName: "ICInnListViewCell", bundle: nil), forCellWithReuseIdentifier: "cell_id")
+        innListView.register(UINib.init(nibName: "ICInnListViewCell", bundle: nil), forCellWithReuseIdentifier: ICInnListViewCell.identifierForCell())
         
         return innListView
     }
@@ -38,19 +35,8 @@ class ICInnListView: ICCollectionView {
         // Drawing code
     }
     */
-
-}
-
-extension ICInnListView: UICollectionViewDataSource, UICollectionViewDelegate {
-    // MARK: - UICollectionViewDelegate
-    // MARK: - UICollectionViewDataSource
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+    override func reuseIdentifierForCell() -> String {
+        return ICInnListViewCell.identifierForCell()
     }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell_id", for: indexPath)
-        
-        return cell
-    }
+
 }

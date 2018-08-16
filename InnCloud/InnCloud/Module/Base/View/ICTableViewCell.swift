@@ -10,6 +10,10 @@ import UIKit
 
 class ICTableViewCell: UITableViewCell {
 
+    class func identifierForCell() -> String {
+        return ""
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -12,8 +12,9 @@ class ICInnListViewCell: ICCollectionViewCell {
 
     @IBOutlet weak var innTitleLabel: UILabel!
     @IBOutlet weak var innTitleImageView: UIImageView!
+    
     override class func identifierForCell() -> String {
-        return "cell_id"
+        return "k_inn_list_view_cell_id"
     }
     
     override func awakeFromNib() {

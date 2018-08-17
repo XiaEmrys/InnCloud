@@ -40,16 +40,11 @@ class ICRecommendationController: ICViewController {
             default:
                 cellModel.innImageName = "img_test_00"
             }
-//            if 0 == (t%2) {
-//                cellModel.innImageName = "img_test_00"
-//            } else {
-//                cellModel.innImageName = "img_test_01"
-//            }
+
             cellModel.innTitle = "inn_\(t)"
             
             innListView.listDataSource!.sectionSource[0].append(cellModel)
         }
-//        innListView.listDataSource?.sectionSource = [[ICViewModel(), ICViewModel(), ICViewModel(), ICViewModel(), ICViewModel(), ICViewModel(), ICViewModel(), ICViewModel(), ICViewModel()]]
         
         /********--TEST--*********/
         
@@ -57,6 +52,11 @@ class ICRecommendationController: ICViewController {
             make.top.left.bottom.right.equalTo(0)
         }
         
+        innListView.didSelectedCell { (indexPath) in
+            let vc = ICTopicListController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController!.pushViewController(vc, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {

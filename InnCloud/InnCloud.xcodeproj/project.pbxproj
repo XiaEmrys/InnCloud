@@ -19,6 +19,12 @@
 		EC0678C92124094300DF0466 /* ICTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678C82124094300DF0466 /* ICTableViewCell.swift */; };
 		EC0678D02124231800DF0466 /* ICListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678CF2124231800DF0466 /* ICListDataSource.swift */; };
 		EC0678D3212431D100DF0466 /* ICInnListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0678D2212431D100DF0466 /* ICInnListDataSource.swift */; };
+		EC099CCE212666FA0002AA65 /* ICTopicListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC099CCD212666FA0002AA65 /* ICTopicListDataSource.swift */; };
+		EC099CD1212669980002AA65 /* ICTopicListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC099CCF212669980002AA65 /* ICTopicListViewCell.swift */; };
+		EC099CD2212669980002AA65 /* ICTopicListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC099CD0212669980002AA65 /* ICTopicListViewCell.xib */; };
+		EC099CD421266A620002AA65 /* ICTopicListViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC099CD321266A620002AA65 /* ICTopicListViewCellModel.swift */; };
+		EC099CD92126B21C0002AA65 /* ICTopicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC099CD72126B21C0002AA65 /* ICTopicListController.swift */; };
+		EC099CDA2126B21C0002AA65 /* ICTopicListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC099CD82126B21C0002AA65 /* ICTopicListController.xib */; };
 		EC59807C21254C7A00547E3E /* ICViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59807B21254C7A00547E3E /* ICViewModel.swift */; };
 		EC59807E21256C4300547E3E /* ICInnListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59807D21256C4300547E3E /* ICInnListCellModel.swift */; };
 		EC59808121257F0300547E3E /* ICTopicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59808021257F0300547E3E /* ICTopicListView.swift */; };
@@ -75,6 +81,12 @@
 		EC0678C82124094300DF0466 /* ICTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTableViewCell.swift; sourceTree = "<group>"; };
 		EC0678CF2124231800DF0466 /* ICListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICListDataSource.swift; sourceTree = "<group>"; };
 		EC0678D2212431D100DF0466 /* ICInnListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInnListDataSource.swift; sourceTree = "<group>"; };
+		EC099CCD212666FA0002AA65 /* ICTopicListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListDataSource.swift; sourceTree = "<group>"; };
+		EC099CCF212669980002AA65 /* ICTopicListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListViewCell.swift; sourceTree = "<group>"; };
+		EC099CD0212669980002AA65 /* ICTopicListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicListViewCell.xib; sourceTree = "<group>"; };
+		EC099CD321266A620002AA65 /* ICTopicListViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListViewCellModel.swift; sourceTree = "<group>"; };
+		EC099CD72126B21C0002AA65 /* ICTopicListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListController.swift; sourceTree = "<group>"; };
+		EC099CD82126B21C0002AA65 /* ICTopicListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicListController.xib; sourceTree = "<group>"; };
 		EC59807B21254C7A00547E3E /* ICViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICViewModel.swift; sourceTree = "<group>"; };
 		EC59807D21256C4300547E3E /* ICInnListCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInnListCellModel.swift; sourceTree = "<group>"; };
 		EC59808021257F0300547E3E /* ICTopicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListView.swift; sourceTree = "<group>"; };
@@ -237,12 +249,30 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
-		EC59807F21257CA300547E3E /* TopicList */ = {
+		EC099CD52126B1D30002AA65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC099CD72126B21C0002AA65 /* ICTopicListController.swift */,
+				EC099CD82126B21C0002AA65 /* ICTopicListController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC099CD62126B1E70002AA65 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				EC59808021257F0300547E3E /* ICTopicListView.swift */,
-				EC598082212580D300547E3E /* DataSource */,
 				EC59808421258A6B00547E3E /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC59807F21257CA300547E3E /* TopicList */ = {
+			isa = PBXGroup;
+			children = (
+				EC099CD52126B1D30002AA65 /* Controller */,
+				EC598082212580D300547E3E /* DataSource */,
+				EC099CD62126B1E70002AA65 /* View */,
 				EC59808321258A6800547E3E /* Model */,
 			);
 			path = TopicList;
@@ -251,6 +281,7 @@
 		EC598082212580D300547E3E /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				EC099CCD212666FA0002AA65 /* ICTopicListDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -258,6 +289,7 @@
 		EC59808321258A6800547E3E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC099CD321266A620002AA65 /* ICTopicListViewCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,6 +297,8 @@
 		EC59808421258A6B00547E3E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				EC099CCF212669980002AA65 /* ICTopicListViewCell.swift */,
+				EC099CD0212669980002AA65 /* ICTopicListViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -530,9 +564,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA2C4212122BE270011EFD3 /* ICRecommendationController.xib in Resources */,
+				EC099CD2212669980002AA65 /* ICTopicListViewCell.xib in Resources */,
 				ECA2C3ED2122A9AA0011EFD3 /* LaunchScreen.storyboard in Resources */,
 				EC0678C52124044900DF0466 /* ICPersonalCenterController.xib in Resources */,
 				EC0678BF2124034600DF0466 /* ICPertinentController.xib in Resources */,
+				EC099CDA2126B21C0002AA65 /* ICTopicListController.xib in Resources */,
 				ECA2C42D2122DA530011EFD3 /* ICInnListViewCell.xib in Resources */,
 				ECA2C3EA2122A9AA0011EFD3 /* Assets.xcassets in Resources */,
 			);
@@ -635,10 +671,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0678C92124094300DF0466 /* ICTableViewCell.swift in Sources */,
+				EC099CCE212666FA0002AA65 /* ICTopicListDataSource.swift in Sources */,
+				EC099CD1212669980002AA65 /* ICTopicListViewCell.swift in Sources */,
 				EC0678D3212431D100DF0466 /* ICInnListDataSource.swift in Sources */,
 				ECA2C4252122CEFF0011EFD3 /* ICCollectionViewCell.swift in Sources */,
 				ECA2C4192122B2160011EFD3 /* ICMainTabBarController.swift in Sources */,
 				EC0678B92123D43400DF0466 /* VendorHeader.swift in Sources */,
+				EC099CD421266A620002AA65 /* ICTopicListViewCellModel.swift in Sources */,
 				EC0678D02124231800DF0466 /* ICListDataSource.swift in Sources */,
 				EC59808121257F0300547E3E /* ICTopicListView.swift in Sources */,
 				EC59807C21254C7A00547E3E /* ICViewModel.swift in Sources */,
@@ -648,6 +687,7 @@
 				ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */,
 				ECA2C4232122CEE10011EFD3 /* ICCollectionView.swift in Sources */,
 				EC59807E21256C4300547E3E /* ICInnListCellModel.swift in Sources */,
+				EC099CD92126B21C0002AA65 /* ICTopicListController.swift in Sources */,
 				ECA2C4162122B1580011EFD3 /* ICViewController.swift in Sources */,
 				ECA2C4292122DA350011EFD3 /* ICInnListView.swift in Sources */,
 				ECA2C42C2122DA530011EFD3 /* ICInnListViewCell.swift in Sources */,

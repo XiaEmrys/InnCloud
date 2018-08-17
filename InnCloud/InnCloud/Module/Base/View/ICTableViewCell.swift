@@ -10,19 +10,10 @@ import UIKit
 
 class ICTableViewCell: UITableViewCell {
 
+    var cellModel: ICViewModel?
+    
     class func identifierForCell() -> String {
         return ""
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

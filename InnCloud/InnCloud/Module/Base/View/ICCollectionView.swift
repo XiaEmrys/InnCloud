@@ -17,6 +17,8 @@ class ICCollectionView: UICollectionView {
         }
     }
 
+    private var didSlectedCellClosures: ((_ indexPath: NSIndexPath)->())?
+    
     static func collectionView(frame: CGRect, layout: UICollectionViewLayout, listDataSource: ICListDataSource) -> ICCollectionView {
         let collectionView = ICCollectionView(frame: frame, collectionViewLayout: layout)
         collectionView.listDataSource = listDataSource
@@ -29,10 +31,19 @@ class ICCollectionView: UICollectionView {
         return ICCollectionViewCell.identifierForCell()
     }
     
+    func didSelectedCell(operation: @escaping (_ indexPath: NSIndexPath)->()) -> () {
+        
+        didSlectedCellClosures = operation
+    }
 }
 
 extension ICCollectionView: UICollectionViewDataSource, UICollectionViewDelegate {
     // MARK: - UICollectionViewDelegate
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let _: (_ indexPath: NSIndexPath)->() = didSlectedCellClosures {
+            didSlectedCellClosures!(indexPath as NSIndexPath)
+        }
+    }
     // MARK: - UICollectionViewDataSource
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         if let _ = listDataSource {

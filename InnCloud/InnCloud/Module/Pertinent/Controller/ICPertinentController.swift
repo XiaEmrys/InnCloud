@@ -53,6 +53,12 @@ class ICPertinentController: ICViewController {
         innListView.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalTo(0)
         }
+        
+        innListView.didSelectedCell { (indexPath) in
+            let vc = ICTopicListController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController!.pushViewController(vc, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {

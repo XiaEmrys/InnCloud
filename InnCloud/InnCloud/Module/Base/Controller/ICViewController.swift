@@ -14,6 +14,7 @@ class ICViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupForDismissKeyboard()
     }
 
     override func didReceiveMemoryWarning() {

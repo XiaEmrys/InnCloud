@@ -26,6 +26,13 @@
 		EC099CD92126B21C0002AA65 /* ICTopicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC099CD72126B21C0002AA65 /* ICTopicListController.swift */; };
 		EC099CDA2126B21C0002AA65 /* ICTopicListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC099CD82126B21C0002AA65 /* ICTopicListController.xib */; };
 		EC4D26F8212A6C1500795A92 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D26F7212A6C1500795A92 /* UIViewController+DismissKeyboard.swift */; };
+		EC4D2700212AA6E900795A92 /* ICTopicDiscussionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D26FE212AA6E900795A92 /* ICTopicDiscussionController.swift */; };
+		EC4D2701212AA6E900795A92 /* ICTopicDiscussionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4D26FF212AA6E900795A92 /* ICTopicDiscussionController.xib */; };
+		EC4D2703212AA71100795A92 /* ICTopicDiscussionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D2702212AA71100795A92 /* ICTopicDiscussionDataSource.swift */; };
+		EC4D2705212AA74700795A92 /* ICTopicDiscussionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D2704212AA74700795A92 /* ICTopicDiscussionView.swift */; };
+		EC4D2709212AA77500795A92 /* ICTopicDiscussionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D2707212AA77500795A92 /* ICTopicDiscussionCell.swift */; };
+		EC4D270A212AA77500795A92 /* ICTopicDiscussionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4D2708212AA77500795A92 /* ICTopicDiscussionCell.xib */; };
+		EC4D270C212AA79E00795A92 /* ICTopicDiscussionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D270B212AA79E00795A92 /* ICTopicDiscussionCellModel.swift */; };
 		EC59807C21254C7A00547E3E /* ICViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59807B21254C7A00547E3E /* ICViewModel.swift */; };
 		EC59807E21256C4300547E3E /* ICInnListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59807D21256C4300547E3E /* ICInnListCellModel.swift */; };
 		EC59808121257F0300547E3E /* ICTopicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59808021257F0300547E3E /* ICTopicListView.swift */; };
@@ -89,6 +96,13 @@
 		EC099CD72126B21C0002AA65 /* ICTopicListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListController.swift; sourceTree = "<group>"; };
 		EC099CD82126B21C0002AA65 /* ICTopicListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicListController.xib; sourceTree = "<group>"; };
 		EC4D26F7212A6C1500795A92 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
+		EC4D26FE212AA6E900795A92 /* ICTopicDiscussionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicDiscussionController.swift; sourceTree = "<group>"; };
+		EC4D26FF212AA6E900795A92 /* ICTopicDiscussionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicDiscussionController.xib; sourceTree = "<group>"; };
+		EC4D2702212AA71100795A92 /* ICTopicDiscussionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicDiscussionDataSource.swift; sourceTree = "<group>"; };
+		EC4D2704212AA74700795A92 /* ICTopicDiscussionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicDiscussionView.swift; sourceTree = "<group>"; };
+		EC4D2707212AA77500795A92 /* ICTopicDiscussionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicDiscussionCell.swift; sourceTree = "<group>"; };
+		EC4D2708212AA77500795A92 /* ICTopicDiscussionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicDiscussionCell.xib; sourceTree = "<group>"; };
+		EC4D270B212AA79E00795A92 /* ICTopicDiscussionCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicDiscussionCellModel.swift; sourceTree = "<group>"; };
 		EC59807B21254C7A00547E3E /* ICViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICViewModel.swift; sourceTree = "<group>"; };
 		EC59807D21256C4300547E3E /* ICInnListCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICInnListCellModel.swift; sourceTree = "<group>"; };
 		EC59808021257F0300547E3E /* ICTopicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListView.swift; sourceTree = "<group>"; };
@@ -278,6 +292,69 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		EC4D26F9212A9AF700795A92 /* TopicDiscussion */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D26FA212AA6AE00795A92 /* Controller */,
+				EC4D26FB212AA6BB00795A92 /* DataSource */,
+				EC4D26FC212AA6C400795A92 /* View */,
+				EC4D26FD212AA6CB00795A92 /* Model */,
+			);
+			path = TopicDiscussion;
+			sourceTree = "<group>";
+		};
+		EC4D26FA212AA6AE00795A92 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D26FE212AA6E900795A92 /* ICTopicDiscussionController.swift */,
+				EC4D26FF212AA6E900795A92 /* ICTopicDiscussionController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC4D26FB212AA6BB00795A92 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D2702212AA71100795A92 /* ICTopicDiscussionDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		EC4D26FC212AA6C400795A92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D2704212AA74700795A92 /* ICTopicDiscussionView.swift */,
+				EC4D2706212AA75000795A92 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC4D26FD212AA6CB00795A92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D270B212AA79E00795A92 /* ICTopicDiscussionCellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC4D2706212AA75000795A92 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D2707212AA77500795A92 /* ICTopicDiscussionCell.swift */,
+				EC4D2708212AA77500795A92 /* ICTopicDiscussionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EC4D270D212AB68400795A92 /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				EC59807F21257CA300547E3E /* TopicList */,
+				EC4D26F9212A9AF700795A92 /* TopicDiscussion */,
+			);
+			path = Topic;
+			sourceTree = "<group>";
+		};
 		EC59807F21257CA300547E3E /* TopicList */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +451,7 @@
 				ECA2C4112122B0EA0011EFD3 /* Base */,
 				ECA2C4172122B1E20011EFD3 /* Main */,
 				ECA2C4262122D9640011EFD3 /* Commons */,
+				EC4D270D212AB68400795A92 /* Topic */,
 				ECA2C41C2122BDE80011EFD3 /* Recommendation */,
 				EC0678BA212402ED00DF0466 /* Pertinent */,
 				EC0678C02124040F00DF0466 /* PersonalCenter */,
@@ -449,7 +527,6 @@
 			isa = PBXGroup;
 			children = (
 				ECA2C4272122DA110011EFD3 /* InnList */,
-				EC59807F21257CA300547E3E /* TopicList */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -575,6 +652,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA2C4212122BE270011EFD3 /* ICRecommendationController.xib in Resources */,
+				EC4D270A212AA77500795A92 /* ICTopicDiscussionCell.xib in Resources */,
 				EC099CD2212669980002AA65 /* ICTopicListViewCell.xib in Resources */,
 				ECA2C3ED2122A9AA0011EFD3 /* LaunchScreen.storyboard in Resources */,
 				EC0678C52124044900DF0466 /* ICPersonalCenterController.xib in Resources */,
@@ -582,6 +660,7 @@
 				EC099CDA2126B21C0002AA65 /* ICTopicListController.xib in Resources */,
 				ECA2C42D2122DA530011EFD3 /* ICInnListViewCell.xib in Resources */,
 				ECA2C3EA2122A9AA0011EFD3 /* Assets.xcassets in Resources */,
+				EC4D2701212AA6E900795A92 /* ICTopicDiscussionController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,11 +760,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4D2703212AA71100795A92 /* ICTopicDiscussionDataSource.swift in Sources */,
 				EC0678C92124094300DF0466 /* ICTableViewCell.swift in Sources */,
+				EC4D270C212AA79E00795A92 /* ICTopicDiscussionCellModel.swift in Sources */,
 				EC099CCE212666FA0002AA65 /* ICTopicListDataSource.swift in Sources */,
 				EC099CD1212669980002AA65 /* ICTopicListViewCell.swift in Sources */,
 				EC0678D3212431D100DF0466 /* ICInnListDataSource.swift in Sources */,
 				ECA2C4252122CEFF0011EFD3 /* ICCollectionViewCell.swift in Sources */,
+				EC4D2709212AA77500795A92 /* ICTopicDiscussionCell.swift in Sources */,
 				ECA2C4192122B2160011EFD3 /* ICMainTabBarController.swift in Sources */,
 				EC0678B92123D43400DF0466 /* VendorHeader.swift in Sources */,
 				EC099CD421266A620002AA65 /* ICTopicListViewCellModel.swift in Sources */,
@@ -696,6 +778,7 @@
 				EC0678C42124044900DF0466 /* ICPersonalCenterController.swift in Sources */,
 				EC0678BE2124034600DF0466 /* ICPertinentController.swift in Sources */,
 				ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */,
+				EC4D2705212AA74700795A92 /* ICTopicDiscussionView.swift in Sources */,
 				EC4D26F8212A6C1500795A92 /* UIViewController+DismissKeyboard.swift in Sources */,
 				ECA2C4232122CEE10011EFD3 /* ICCollectionView.swift in Sources */,
 				EC59807E21256C4300547E3E /* ICInnListCellModel.swift in Sources */,
@@ -706,6 +789,7 @@
 				ECA2C41B2122B8480011EFD3 /* ICNavigationControllerr.swift in Sources */,
 				ECA2C4202122BE270011EFD3 /* ICRecommendationController.swift in Sources */,
 				ECA2C3E02122A9A90011EFD3 /* AppDelegate.swift in Sources */,
+				EC4D2700212AA6E900795A92 /* ICTopicDiscussionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

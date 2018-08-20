@@ -16,4 +16,8 @@ class ICTableViewCell: UITableViewCell {
         return ""
     }
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        selectionStyle = .none
+    }
 }

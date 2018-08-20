@@ -17,6 +17,8 @@ class ICTableView: UITableView {
         }
     }
     
+    private var didSlectedCellClosures: ((_ indexPath: NSIndexPath)->())?
+    
     static func tableView(frame: CGRect, listDataSource: ICListDataSource) -> ICTableView {
         let tableView = ICTableView(frame: frame, style: .plain)
         tableView.listDataSource = listDataSource
@@ -28,10 +30,22 @@ class ICTableView: UITableView {
     func reuseIdentifierForCell() -> String {
         return ICTableViewCell.identifierForCell()
     }
+    
+    func didSelectedCell(operation: @escaping (_ indexPath: NSIndexPath)->()) -> () {
+        
+        didSlectedCellClosures = operation
+    }
+
 }
 
 extension ICTableView: UITableViewDataSource, UITableViewDelegate {
     // MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let _: (_ indexPath: NSIndexPath)->() = didSlectedCellClosures {
+            didSlectedCellClosures!(indexPath as NSIndexPath)
+        }
+    }
     // MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         if let _ = listDataSource {

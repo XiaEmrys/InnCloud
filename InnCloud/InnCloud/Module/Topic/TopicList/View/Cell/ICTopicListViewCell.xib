@@ -19,16 +19,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIH-Wz-lmt">
-                        <rect key="frame" x="12" y="12" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIH-Wz-lmt">
+                        <rect key="frame" x="12" y="11.5" width="296" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bIH-Wz-lmt" secondAttribute="bottom" constant="12" id="NdX-pL-Ajt"/>
                     <constraint firstItem="bIH-Wz-lmt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="OOC-fF-JsP"/>
                     <constraint firstItem="bIH-Wz-lmt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="es4-LD-ezy"/>
+                    <constraint firstItem="bIH-Wz-lmt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="fL7-W9-sWI"/>
+                    <constraint firstAttribute="trailing" secondItem="bIH-Wz-lmt" secondAttribute="trailing" constant="12" id="mjC-0p-K6c"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

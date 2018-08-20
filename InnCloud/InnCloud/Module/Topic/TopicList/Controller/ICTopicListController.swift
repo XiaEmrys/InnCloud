@@ -34,6 +34,12 @@ class ICTopicListController: ICViewController {
         topicListView.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalTo(0)
         }
+        
+        topicListView.didSelectedCell { (indexPath) in
+            let vc = ICTopicDiscussionController()
+            
+            self.navigationController!.pushViewController(vc, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {

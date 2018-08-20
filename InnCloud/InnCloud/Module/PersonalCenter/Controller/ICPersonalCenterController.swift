@@ -15,9 +15,21 @@ class ICPersonalCenterController: ICViewController {
 
         navigationItem.title = "个人中心"
         
-        let personalCenterContentView = ICTableView(frame: CGRect.zero)
+        let personalCenterContentView = ICPersonalCenterView.personalCenterView(frame: CGRect.zero)
         
         view.addSubview(personalCenterContentView)
+        
+        // 数据处理部分
+        /********--TEST--*********/
+        personalCenterContentView.listDataSource!.sectionSource.append([ICPersonalCenterCellModel]())
+        for t in 0..<10 {
+            let cellModel = ICPersonalCenterCellModel()
+            
+//            cellModel.topicTitle = "ICPersonalCenterCellModel\(t)"
+            
+            personalCenterContentView.listDataSource!.sectionSource[0].append(cellModel)
+        }
+        /********--TEST--*********/
         
         personalCenterContentView.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalTo(0)

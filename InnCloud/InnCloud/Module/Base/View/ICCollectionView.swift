@@ -10,21 +10,34 @@ import UIKit
 
 class ICCollectionView: UICollectionView {
     
-    var listDataSource: ICListDataSource? {
-        didSet {
-            dataSource = self
-            delegate = self
-        }
-    }
+    var listDataSource: ICListDataSource?
 
     private var didSlectedCellClosures: ((_ indexPath: NSIndexPath)->())?
     
-    static func collectionView(frame: CGRect, layout: UICollectionViewLayout, listDataSource: ICListDataSource) -> ICCollectionView {
-        let collectionView = ICCollectionView(frame: frame, collectionViewLayout: layout)
-        collectionView.listDataSource = listDataSource
+    convenience init(frame: CGRect, layout: UICollectionViewLayout, listDataSource: ICListDataSource) {
         
-        return collectionView
+        self.init(frame: frame, collectionViewLayout: layout)
+        
+        self.listDataSource = listDataSource
+        
+        self.dataSource = self
+        self.delegate = self
     }
+    
+    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+        super.init(frame: frame, collectionViewLayout: layout)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+//    static func collectionView(frame: CGRect, layout: UICollectionViewLayout, listDataSource: ICListDataSource) -> ICCollectionView {
+//        let collectionView = ICCollectionView(frame: frame, collectionViewLayout: layout)
+//        collectionView.listDataSource = listDataSource
+//        
+//        return collectionView
+//    }
     
     // MARK: - Method
     func reuseIdentifierForCell() -> String {

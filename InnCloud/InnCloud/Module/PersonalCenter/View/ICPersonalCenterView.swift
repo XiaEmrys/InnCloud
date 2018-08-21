@@ -12,9 +12,9 @@ class ICPersonalCenterView: ICTableView {
 
     static func personalCenterView(frame: CGRect) -> ICPersonalCenterView {
         
-        let personalCenterView = ICPersonalCenterView(frame: frame)
+        let personalCenterView = ICPersonalCenterView(frame: frame, listDataSource: ICPersonalCenterDataSource())
         
-        personalCenterView.listDataSource = ICPersonalCenterDataSource()
+//        personalCenterView.listDataSource = ICPersonalCenterDataSource()
         
         personalCenterView.backgroundColor = UIColor.white
         
@@ -22,6 +22,10 @@ class ICPersonalCenterView: ICTableView {
         
         personalCenterView.estimatedRowHeight = 44
         personalCenterView.rowHeight = UITableViewAutomaticDimension
+        
+        personalCenterView.tableHeaderView = ICPersonalCenterHeader.personalCenterHeader()
+        
+        personalCenterView.bounces = false
         
         return personalCenterView
     }

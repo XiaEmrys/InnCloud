@@ -26,6 +26,7 @@ class ICTopicListController: ICViewController {
             let cellModel = ICTopicListViewCellModel()
             
             cellModel.topicTitle = "topicTitle_\(t)"
+            cellModel.topicInformation = "跟帖：\(arc4random_uniform(200))"
             
             topicListView.listDataSource!.sectionSource[0].append(cellModel)
         }        

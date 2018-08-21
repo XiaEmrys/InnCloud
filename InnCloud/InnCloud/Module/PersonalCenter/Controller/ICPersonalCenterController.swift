@@ -22,7 +22,7 @@ class ICPersonalCenterController: ICViewController {
         // 数据处理部分
         /********--TEST--*********/
         personalCenterContentView.listDataSource!.sectionSource.append([ICPersonalCenterCellModel]())
-        for t in 0..<10 {
+        for _ in 0..<10 {
             let cellModel = ICPersonalCenterCellModel()
             
 //            cellModel.topicTitle = "ICPersonalCenterCellModel\(t)"

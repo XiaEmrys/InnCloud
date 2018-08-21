@@ -25,6 +25,9 @@
 		EC099CD421266A620002AA65 /* ICTopicListViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC099CD321266A620002AA65 /* ICTopicListViewCellModel.swift */; };
 		EC099CD92126B21C0002AA65 /* ICTopicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC099CD72126B21C0002AA65 /* ICTopicListController.swift */; };
 		EC099CDA2126B21C0002AA65 /* ICTopicListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC099CD82126B21C0002AA65 /* ICTopicListController.xib */; };
+		EC2FB5E3212C093000D08CE0 /* ICView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FB5E2212C093000D08CE0 /* ICView.swift */; };
+		EC2FB5E5212C097200D08CE0 /* ICPersonalCenterHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FB5E4212C097200D08CE0 /* ICPersonalCenterHeader.swift */; };
+		EC2FB5E7212C098D00D08CE0 /* ICPersonalCenterHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2FB5E6212C098D00D08CE0 /* ICPersonalCenterHeader.xib */; };
 		EC4D26F8212A6C1500795A92 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D26F7212A6C1500795A92 /* UIViewController+DismissKeyboard.swift */; };
 		EC4D2700212AA6E900795A92 /* ICTopicDiscussionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D26FE212AA6E900795A92 /* ICTopicDiscussionController.swift */; };
 		EC4D2701212AA6E900795A92 /* ICTopicDiscussionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4D26FF212AA6E900795A92 /* ICTopicDiscussionController.xib */; };
@@ -100,6 +103,9 @@
 		EC099CD321266A620002AA65 /* ICTopicListViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListViewCellModel.swift; sourceTree = "<group>"; };
 		EC099CD72126B21C0002AA65 /* ICTopicListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListController.swift; sourceTree = "<group>"; };
 		EC099CD82126B21C0002AA65 /* ICTopicListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicListController.xib; sourceTree = "<group>"; };
+		EC2FB5E2212C093000D08CE0 /* ICView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICView.swift; sourceTree = "<group>"; };
+		EC2FB5E4212C097200D08CE0 /* ICPersonalCenterHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICPersonalCenterHeader.swift; sourceTree = "<group>"; };
+		EC2FB5E6212C098D00D08CE0 /* ICPersonalCenterHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICPersonalCenterHeader.xib; sourceTree = "<group>"; };
 		EC4D26F7212A6C1500795A92 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		EC4D26FE212AA6E900795A92 /* ICTopicDiscussionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicDiscussionController.swift; sourceTree = "<group>"; };
 		EC4D26FF212AA6E900795A92 /* ICTopicDiscussionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicDiscussionController.xib; sourceTree = "<group>"; };
@@ -297,6 +303,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EC2FB5E1212C084600D08CE0 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FB5E4212C097200D08CE0 /* ICPersonalCenterHeader.swift */,
+				EC2FB5E6212C098D00D08CE0 /* ICPersonalCenterHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		EC4D26F6212A6BC900795A92 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				EC4D2717212ABFB900795A92 /* ICPersonalCenterView.swift */,
+				EC2FB5E1212C084600D08CE0 /* Header */,
 				EC4D2719212ABFC000795A92 /* Cell */,
 			);
 			path = View;
@@ -537,6 +553,7 @@
 		ECA2C4142122B1320011EFD3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC2FB5E2212C093000D08CE0 /* ICView.swift */,
 				ECA2C4222122CEE10011EFD3 /* ICCollectionView.swift */,
 				ECA2C4242122CEFF0011EFD3 /* ICCollectionViewCell.swift */,
 				EC0678C62124092900DF0466 /* ICTableView.swift */,
@@ -699,6 +716,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA2C4212122BE270011EFD3 /* ICRecommendationController.xib in Resources */,
+				EC2FB5E7212C098D00D08CE0 /* ICPersonalCenterHeader.xib in Resources */,
 				EC4D270A212AA77500795A92 /* ICTopicDiscussionCell.xib in Resources */,
 				EC099CD2212669980002AA65 /* ICTopicListViewCell.xib in Resources */,
 				ECA2C3ED2122A9AA0011EFD3 /* LaunchScreen.storyboard in Resources */,
@@ -821,11 +839,13 @@
 				ECA2C4192122B2160011EFD3 /* ICMainTabBarController.swift in Sources */,
 				EC0678B92123D43400DF0466 /* VendorHeader.swift in Sources */,
 				EC099CD421266A620002AA65 /* ICTopicListViewCellModel.swift in Sources */,
+				EC2FB5E5212C097200D08CE0 /* ICPersonalCenterHeader.swift in Sources */,
 				EC0678D02124231800DF0466 /* ICListDataSource.swift in Sources */,
 				EC59808121257F0300547E3E /* ICTopicListView.swift in Sources */,
 				EC59807C21254C7A00547E3E /* ICViewModel.swift in Sources */,
 				EC0678C72124092900DF0466 /* ICTableView.swift in Sources */,
 				EC0678C42124044900DF0466 /* ICPersonalCenterController.swift in Sources */,
+				EC2FB5E3212C093000D08CE0 /* ICView.swift in Sources */,
 				EC0678BE2124034600DF0466 /* ICPertinentController.swift in Sources */,
 				ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */,
 				EC4D2705212AA74700795A92 /* ICTopicDiscussionView.swift in Sources */,

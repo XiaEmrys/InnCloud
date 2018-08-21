@@ -12,9 +12,9 @@ class ICTopicDiscussionView: ICTableView {
 
     static func topicDiscussionView(frame: CGRect) -> ICTopicDiscussionView {
         
-        let topicDiscussionView = ICTopicDiscussionView(frame: frame)
+        let topicDiscussionView = ICTopicDiscussionView(frame: frame, listDataSource: ICTopicDiscussionDataSource())
         
-        topicDiscussionView.listDataSource = ICTopicDiscussionDataSource()
+//        topicDiscussionView.listDataSource = ICTopicDiscussionDataSource()
         
         topicDiscussionView.backgroundColor = UIColor.white
         

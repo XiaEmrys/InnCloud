@@ -10,21 +10,36 @@ import UIKit
 
 class ICTableView: UITableView {
 
-    var listDataSource: ICListDataSource? {
-        didSet {
-            dataSource = self
-            delegate = self
-        }
-    }
+    var listDataSource: ICListDataSource?
     
     private var didSlectedCellClosures: ((_ indexPath: NSIndexPath)->())?
     
-    static func tableView(frame: CGRect, listDataSource: ICListDataSource) -> ICTableView {
-        let tableView = ICTableView(frame: frame, style: .plain)
-        tableView.listDataSource = listDataSource
+    convenience init(frame: CGRect, listDataSource: ICListDataSource) {
+        self.init(frame: frame, style: .plain)
         
-        return tableView
+        self.listDataSource = listDataSource
+        self.separatorStyle = .none
+        
+        dataSource = self
+        delegate = self
     }
+    
+    override init(frame: CGRect, style: UITableViewStyle) {
+        super.init(frame: frame, style: style)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+//    static func tableView(frame: CGRect, listDataSource: ICListDataSource) -> ICTableView {
+//        let tableView = ICTableView(frame: frame, style: .plain)
+//        tableView.listDataSource = listDataSource
+//        
+//        tableView.separatorStyle = .none
+//        
+//        return tableView
+//    }
     
     // MARK: - Method
     func reuseIdentifierForCell() -> String {

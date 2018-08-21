@@ -11,4 +11,5 @@ import UIKit
 class ICTopicListViewCellModel: ICViewModel {
     
     var topicTitle: String?
+    var topicInformation: String?
 }

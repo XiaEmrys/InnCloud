@@ -11,6 +11,7 @@ import UIKit
 class ICTopicListViewCell: ICTableViewCell {
 
     @IBOutlet weak var topicTitleLabel: UILabel!
+    @IBOutlet weak var topicInformationLabel: UILabel!
     
     override class func identifierForCell() -> String {
         return "k_topic_list_view_cell_id"
@@ -31,6 +32,7 @@ class ICTopicListViewCell: ICTableViewCell {
         didSet {
             if let t: ICTopicListViewCellModel = cellModel as? ICTopicListViewCellModel {
                 topicTitleLabel.text = t.topicTitle
+                topicInformationLabel.text = t.topicInformation
             }
         }
     }

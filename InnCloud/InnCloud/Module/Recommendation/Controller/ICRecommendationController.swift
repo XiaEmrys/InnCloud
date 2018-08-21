@@ -26,7 +26,7 @@ class ICRecommendationController: ICViewController {
             let cellModel = ICInnListCellModel()
             
             let r = arc4random_uniform(3)
-            print(r)
+            
             switch r {
             case 0:
                 cellModel.innImageName = "img_test_00"

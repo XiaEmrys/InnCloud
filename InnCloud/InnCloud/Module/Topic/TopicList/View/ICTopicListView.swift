@@ -12,9 +12,9 @@ class ICTopicListView: ICTableView {
 
     static func topicListView(frame: CGRect) -> ICTopicListView {
         
-        let topicListView = ICTopicListView(frame: frame)
+        let topicListView = ICTopicListView(frame: frame, listDataSource: ICTopicListDataSource())
         
-        topicListView.listDataSource = ICTopicListDataSource()
+//        topicListView.listDataSource = ICTopicListDataSource()
         
         topicListView.backgroundColor = UIColor.white
         

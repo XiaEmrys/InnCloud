@@ -20,9 +20,9 @@ class ICInnListView: ICCollectionView {
         layout.sectionInset = UIEdgeInsetsMake(innItemMargin, innItemMargin, innItemMargin, innItemMargin)
         layout.scrollDirection = .vertical
         
-        let innListView = ICInnListView(frame: frame, collectionViewLayout: layout)
+        let innListView = ICInnListView(frame: frame, layout: layout, listDataSource: ICInnListDataSource())
         
-        innListView.listDataSource = ICInnListDataSource()
+//        innListView.listDataSource = ICInnListDataSource()
         
         innListView.backgroundColor = UIColor.white
         

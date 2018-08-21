@@ -43,6 +43,8 @@ class ICRecommendationController: ICViewController {
 
             cellModel.innTitle = "inn_\(t)"
             
+            cellModel.innInformation = "人气：\(arc4random_uniform(10000))"
+            
             innListView.listDataSource!.sectionSource[0].append(cellModel)
         }
         

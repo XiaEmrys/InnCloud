@@ -12,5 +12,5 @@ class ICInnListCellModel: ICViewModel {
     
     var innTitle: String?
     var innImageName: String?
-    
+    var innInformation: String?
 }

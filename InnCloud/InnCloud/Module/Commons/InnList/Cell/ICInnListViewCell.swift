@@ -12,6 +12,7 @@ class ICInnListViewCell: ICCollectionViewCell {
 
     @IBOutlet weak var innTitleLabel: UILabel!
     @IBOutlet weak var innTitleImageView: UIImageView!
+    @IBOutlet weak var innInformationLabel: UILabel!
     
     override class func identifierForCell() -> String {
         return "k_inn_list_view_cell_id"
@@ -27,6 +28,7 @@ class ICInnListViewCell: ICCollectionViewCell {
             if let t: ICInnListCellModel = cellModel as? ICInnListCellModel {
                 innTitleLabel.text = t.innTitle
                 innTitleImageView.image = UIImage(named: t.innImageName!)
+                innInformationLabel.text = t.innInformation
             }
         }
     }

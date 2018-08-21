@@ -8,14 +8,16 @@
 
 import UIKit
 
+private let innItemMargin: CGFloat = 8
+
 class ICInnListView: ICCollectionView {
     
     static func innListView(frame: CGRect) -> ICInnListView {
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.size.width/2 - 15, height: 150);
+        layout.itemSize = CGSize(width: (UIScreen.main.bounds.size.width - 3*innItemMargin)/2-1 , height: 150);
         
-        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
+        layout.sectionInset = UIEdgeInsetsMake(innItemMargin, innItemMargin, innItemMargin, innItemMargin)
         layout.scrollDirection = .vertical
         
         let innListView = ICInnListView(frame: frame, collectionViewLayout: layout)

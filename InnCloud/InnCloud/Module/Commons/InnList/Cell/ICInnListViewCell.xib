@@ -13,38 +13,56 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ICInnListViewCell" customModule="InnCloud" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="122" height="91"/>
+            <rect key="frame" x="0.0" y="0.0" width="122" height="159"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="122" height="91"/>
+                <rect key="frame" x="0.0" y="0.0" width="122" height="159"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xDu-Sw-PRb">
-                        <rect key="frame" x="0.0" y="0.0" width="122" height="91"/>
+                        <rect key="frame" x="0.0" y="25" width="122" height="111"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhZ-hr-6cp">
-                        <rect key="frame" x="43.5" y="35" width="35" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhZ-hr-6cp">
+                        <rect key="frame" x="5" y="5" width="112" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="UwC-Kd-FBm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="information" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSr-oF-Kw2">
+                        <rect key="frame" x="5" y="141" width="112" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="Djl-hO-ofG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="xDu-Sw-PRb" secondAttribute="trailing" id="18K-iI-GX4"/>
-                <constraint firstItem="xDu-Sw-PRb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8Qr-qq-1VO"/>
-                <constraint firstItem="KhZ-hr-6cp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="CK8-Hu-MFD"/>
-                <constraint firstAttribute="bottom" secondItem="xDu-Sw-PRb" secondAttribute="bottom" id="Mgx-pk-ArZ"/>
+                <constraint firstItem="LSr-oF-Kw2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="6Ga-Q3-zpC"/>
+                <constraint firstItem="xDu-Sw-PRb" firstAttribute="top" secondItem="KhZ-hr-6cp" secondAttribute="bottom" constant="5" id="QC1-wf-wgp"/>
                 <constraint firstItem="KhZ-hr-6cp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bI6-lL-Kai"/>
+                <constraint firstAttribute="trailing" secondItem="LSr-oF-Kw2" secondAttribute="trailing" constant="5" id="cBv-Nd-UCW"/>
+                <constraint firstItem="KhZ-hr-6cp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="dPA-K2-YKo"/>
+                <constraint firstAttribute="bottom" secondItem="LSr-oF-Kw2" secondAttribute="bottom" constant="5" id="hJ9-vs-CbU"/>
+                <constraint firstItem="KhZ-hr-6cp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="rna-rS-3RG"/>
+                <constraint firstItem="LSr-oF-Kw2" firstAttribute="top" secondItem="xDu-Sw-PRb" secondAttribute="bottom" constant="5" id="s7q-43-mKC"/>
+                <constraint firstAttribute="trailing" secondItem="KhZ-hr-6cp" secondAttribute="trailing" constant="5" id="s9N-HQ-GKc"/>
                 <constraint firstItem="xDu-Sw-PRb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ucW-oa-XIc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="122" height="91"/>
+            <size key="customSize" width="122" height="159"/>
             <connections>
+                <outlet property="innInformationLabel" destination="LSr-oF-Kw2" id="JQz-Cb-MSL"/>
                 <outlet property="innTitleImageView" destination="xDu-Sw-PRb" id="ZKL-nx-6Qa"/>
                 <outlet property="innTitleLabel" destination="KhZ-hr-6cp" id="QvB-hl-QCo"/>
             </connections>
-            <point key="canvasLocation" x="61" y="41.5"/>
+            <point key="canvasLocation" x="61" y="7.5"/>
         </collectionViewCell>
     </objects>
 </document>

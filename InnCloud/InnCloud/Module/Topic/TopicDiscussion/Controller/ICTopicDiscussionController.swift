@@ -36,6 +36,7 @@ class ICTopicDiscussionController: ICViewController {
             make.top.left.bottom.right.equalTo(0)
         }
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "跟帖", style: .plain, target: self, action: #selector(test))
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +44,11 @@ class ICTopicDiscussionController: ICViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // MARK: - test
+    @objc func test() {
+        print("test")
+    }
+    
     /*
     // MARK: - Navigation
 

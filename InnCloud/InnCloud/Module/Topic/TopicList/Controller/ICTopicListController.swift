@@ -41,6 +41,8 @@ class ICTopicListController: ICViewController {
             
             self.navigationController!.pushViewController(vc, animated: true)
         }
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "发帖", style: .plain, target: self, action: #selector(test))
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,6 +50,10 @@ class ICTopicListController: ICViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - test
+    @objc func test() {
+        print("test")
+    }
 
     /*
     // MARK: - Navigation

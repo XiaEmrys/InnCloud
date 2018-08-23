@@ -10,11 +10,5 @@ import UIKit
 
 class ICListDataSource: NSObject {
     
-//    let sectionCount: Int = {
-//        return 0
-//    }()
-//    let rowCount: Int = {
-//        return 0
-//    }()
     var sectionSource = [[ICViewModel]]()
 }

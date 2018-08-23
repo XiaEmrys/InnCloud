@@ -25,6 +25,9 @@
 		EC099CD421266A620002AA65 /* ICTopicListViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC099CD321266A620002AA65 /* ICTopicListViewCellModel.swift */; };
 		EC099CD92126B21C0002AA65 /* ICTopicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC099CD72126B21C0002AA65 /* ICTopicListController.swift */; };
 		EC099CDA2126B21C0002AA65 /* ICTopicListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC099CD82126B21C0002AA65 /* ICTopicListController.xib */; };
+		EC2E7B02212E53C4004C49F9 /* TopicDiscussionDataTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC2E7B01212E53C4004C49F9 /* TopicDiscussionDataTest.plist */; };
+		EC2E7B04212E8D1F004C49F9 /* ICTopicDiscussionTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E7B03212E8D1F004C49F9 /* ICTopicDiscussionTitleHeader.swift */; };
+		EC2E7B07212E8D4B004C49F9 /* ICTopicDiscussionTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2E7B06212E8D4B004C49F9 /* ICTopicDiscussionTitleHeader.xib */; };
 		EC2FB5E3212C093000D08CE0 /* ICView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FB5E2212C093000D08CE0 /* ICView.swift */; };
 		EC2FB5E5212C097200D08CE0 /* ICPersonalCenterHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FB5E4212C097200D08CE0 /* ICPersonalCenterHeader.swift */; };
 		EC2FB5E7212C098D00D08CE0 /* ICPersonalCenterHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2FB5E6212C098D00D08CE0 /* ICPersonalCenterHeader.xib */; };
@@ -103,6 +106,9 @@
 		EC099CD321266A620002AA65 /* ICTopicListViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListViewCellModel.swift; sourceTree = "<group>"; };
 		EC099CD72126B21C0002AA65 /* ICTopicListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicListController.swift; sourceTree = "<group>"; };
 		EC099CD82126B21C0002AA65 /* ICTopicListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicListController.xib; sourceTree = "<group>"; };
+		EC2E7B01212E53C4004C49F9 /* TopicDiscussionDataTest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TopicDiscussionDataTest.plist; sourceTree = "<group>"; };
+		EC2E7B03212E8D1F004C49F9 /* ICTopicDiscussionTitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicDiscussionTitleHeader.swift; sourceTree = "<group>"; };
+		EC2E7B06212E8D4B004C49F9 /* ICTopicDiscussionTitleHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicDiscussionTitleHeader.xib; sourceTree = "<group>"; };
 		EC2FB5E2212C093000D08CE0 /* ICView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICView.swift; sourceTree = "<group>"; };
 		EC2FB5E4212C097200D08CE0 /* ICPersonalCenterHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICPersonalCenterHeader.swift; sourceTree = "<group>"; };
 		EC2FB5E6212C098D00D08CE0 /* ICPersonalCenterHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICPersonalCenterHeader.xib; sourceTree = "<group>"; };
@@ -303,6 +309,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EC2E7B05212E8D2B004C49F9 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EC2E7B03212E8D1F004C49F9 /* ICTopicDiscussionTitleHeader.swift */,
+				EC2E7B06212E8D4B004C49F9 /* ICTopicDiscussionTitleHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		EC2FB5E1212C084600D08CE0 /* Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +358,7 @@
 		EC4D26FB212AA6BB00795A92 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				EC2E7B01212E53C4004C49F9 /* TopicDiscussionDataTest.plist */,
 				EC4D2702212AA71100795A92 /* ICTopicDiscussionDataSource.swift */,
 			);
 			path = DataSource;
@@ -352,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				EC4D2704212AA74700795A92 /* ICTopicDiscussionView.swift */,
+				EC2E7B05212E8D2B004C49F9 /* Header */,
 				EC4D2706212AA75000795A92 /* Cell */,
 			);
 			path = View;
@@ -716,6 +733,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA2C4212122BE270011EFD3 /* ICRecommendationController.xib in Resources */,
+				EC2E7B02212E53C4004C49F9 /* TopicDiscussionDataTest.plist in Resources */,
+				EC2E7B07212E8D4B004C49F9 /* ICTopicDiscussionTitleHeader.xib in Resources */,
 				EC2FB5E7212C098D00D08CE0 /* ICPersonalCenterHeader.xib in Resources */,
 				EC4D270A212AA77500795A92 /* ICTopicDiscussionCell.xib in Resources */,
 				EC099CD2212669980002AA65 /* ICTopicListViewCell.xib in Resources */,
@@ -848,6 +867,7 @@
 				EC2FB5E3212C093000D08CE0 /* ICView.swift in Sources */,
 				EC0678BE2124034600DF0466 /* ICPertinentController.swift in Sources */,
 				ECA2C3E82122A9A90011EFD3 /* InnCloud.xcdatamodeld in Sources */,
+				EC2E7B04212E8D1F004C49F9 /* ICTopicDiscussionTitleHeader.swift in Sources */,
 				EC4D2705212AA74700795A92 /* ICTopicDiscussionView.swift in Sources */,
 				EC4D26F8212A6C1500795A92 /* UIViewController+DismissKeyboard.swift in Sources */,
 				EC4D2718212ABFB900795A92 /* ICPersonalCenterView.swift in Sources */,

@@ -19,9 +19,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-Om-rgx">
-                        <rect key="frame" x="16" y="12" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-Om-rgx">
+                        <rect key="frame" x="12" y="12" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -36,11 +35,16 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="dNo-z8-Moa" secondAttribute="trailing" id="CSp-Dk-Y12"/>
+                    <constraint firstItem="qMJ-Om-rgx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Q6i-me-nOh"/>
+                    <constraint firstItem="qMJ-Om-rgx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="TBx-II-6ld"/>
                     <constraint firstItem="dNo-z8-Moa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="s5r-52-5Vr"/>
                     <constraint firstAttribute="bottom" secondItem="dNo-z8-Moa" secondAttribute="bottom" id="vLk-YH-1pI"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLabel" destination="qMJ-Om-rgx" id="L5j-bx-CXC"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

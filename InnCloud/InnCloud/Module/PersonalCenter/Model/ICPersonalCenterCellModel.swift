@@ -9,5 +9,6 @@
 import UIKit
 
 class ICPersonalCenterCellModel: ICViewModel {
-
+    
+    var testContent: String?
 }

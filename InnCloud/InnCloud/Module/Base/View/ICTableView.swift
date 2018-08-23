@@ -13,6 +13,7 @@ class ICTableView: UITableView {
     var listDataSource: ICListDataSource?
     
     private var didSlectedCellClosures: ((_ indexPath: NSIndexPath)->())?
+    private var viewForSectionHeader: ((_ indexPath: NSIndexPath)->())?
     
     convenience init(frame: CGRect, listDataSource: ICListDataSource) {
         self.init(frame: frame, style: .plain)
@@ -31,15 +32,6 @@ class ICTableView: UITableView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-//    static func tableView(frame: CGRect, listDataSource: ICListDataSource) -> ICTableView {
-//        let tableView = ICTableView(frame: frame, style: .plain)
-//        tableView.listDataSource = listDataSource
-//        
-//        tableView.separatorStyle = .none
-//        
-//        return tableView
-//    }
     
     // MARK: - Method
     func reuseIdentifierForCell() -> String {
@@ -61,6 +53,12 @@ extension ICTableView: UITableViewDataSource, UITableViewDelegate {
             didSlectedCellClosures!(indexPath as NSIndexPath)
         }
     }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return nil
+    }
+//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        return nil
+//    }
     // MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         if let _ = listDataSource {

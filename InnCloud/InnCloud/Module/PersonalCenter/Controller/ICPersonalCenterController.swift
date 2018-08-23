@@ -21,14 +21,14 @@ class ICPersonalCenterController: ICViewController {
         
         // 数据处理部分
         /********--TEST--*********/
-        personalCenterContentView.listDataSource!.sectionSource.append([ICPersonalCenterCellModel]())
-        for _ in 0..<10 {
-            let cellModel = ICPersonalCenterCellModel()
-            
-//            cellModel.topicTitle = "ICPersonalCenterCellModel\(t)"
-            
-            personalCenterContentView.listDataSource!.sectionSource[0].append(cellModel)
-        }
+        
+        (personalCenterContentView.listDataSource as! ICPersonalCenterDataSource).testMakeData()
+//        personalCenterContentView.listDataSource!.sectionSource.append([ICPersonalCenterCellModel]())
+//        for _ in 0..<10 {
+//            let cellModel = ICPersonalCenterCellModel()
+//
+//            personalCenterContentView.listDataSource!.sectionSource[0].append(cellModel)
+//        }
         /********--TEST--*********/
         
         personalCenterContentView.snp.makeConstraints { (make) in

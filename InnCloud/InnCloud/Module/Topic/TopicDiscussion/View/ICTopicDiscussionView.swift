@@ -23,6 +23,16 @@ class ICTopicDiscussionView: ICTableView {
         topicDiscussionView.estimatedRowHeight = 44
         topicDiscussionView.rowHeight = UITableViewAutomaticDimension
         
+        let titleHeader = ICTopicDiscussionTitleHeader.titleHeader()
+        
+        if 0 == arc4random_uniform(2) {
+            titleHeader.titleLabel.text = "长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题长标题"
+        } else {
+            titleHeader.titleLabel.text = "短标题"
+        }
+        
+        topicDiscussionView.tableHeaderView = titleHeader
+        
         return topicDiscussionView
     }
 

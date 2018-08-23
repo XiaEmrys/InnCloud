@@ -10,6 +10,8 @@ import UIKit
 
 class ICPersonalCenterCell: ICTableViewCell {
 
+    @IBOutlet weak var contentLabel: UILabel!
+    
     override class func identifierForCell() -> String {
         return "k_personal_center_view_cell_id"
     }
@@ -25,4 +27,11 @@ class ICPersonalCenterCell: ICTableViewCell {
         // Configure the view for the selected state
     }
     
+    override var cellModel: ICViewModel? {
+        didSet {
+            if let t: ICPersonalCenterCellModel = cellModel as? ICPersonalCenterCellModel {
+                contentLabel.text = t.testContent
+            }
+        }
+    }
 }

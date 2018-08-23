@@ -21,15 +21,16 @@ class ICTopicDiscussionController: ICViewController {
         
         // 数据处理部分
         /********--TEST--*********/
-        topicDiscussionView.listDataSource!.sectionSource.append([ICTopicDiscussionCellModel]())
-        for t in 0..<100 {
-            
-            let cellModel = ICTopicDiscussionCellModel()
-            
-            cellModel.topicDiscussionContent = "话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题_\(t)"
-            
-            topicDiscussionView.listDataSource!.sectionSource[0].append(cellModel)
-        }
+        
+        (topicDiscussionView.listDataSource as! ICTopicDiscussionDataSource).testMakeData()
+//        for t in 0..<100 {
+//            
+//            let cellModel = ICTopicDiscussionCellModel()
+//            
+//            cellModel.topicDiscussionContent = "话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题_\(t)"
+//            
+//            topicDiscussionView.listDataSource!.sectionSource[0].append(cellModel)
+//        }
         /********--TEST--*********/
         
         topicDiscussionView.snp.makeConstraints { (make) in

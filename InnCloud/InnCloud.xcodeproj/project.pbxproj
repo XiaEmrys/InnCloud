@@ -31,6 +31,8 @@
 		EC2FB5E3212C093000D08CE0 /* ICView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FB5E2212C093000D08CE0 /* ICView.swift */; };
 		EC2FB5E5212C097200D08CE0 /* ICPersonalCenterHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FB5E4212C097200D08CE0 /* ICPersonalCenterHeader.swift */; };
 		EC2FB5E7212C098D00D08CE0 /* ICPersonalCenterHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2FB5E6212C098D00D08CE0 /* ICPersonalCenterHeader.xib */; };
+		EC38D2A8212FB02A008B91E7 /* ICMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC38D2A6212FB02A008B91E7 /* ICMessageController.swift */; };
+		EC38D2A9212FB02A008B91E7 /* ICMessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC38D2A7212FB02A008B91E7 /* ICMessageController.xib */; };
 		EC4D26F8212A6C1500795A92 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D26F7212A6C1500795A92 /* UIViewController+DismissKeyboard.swift */; };
 		EC4D2700212AA6E900795A92 /* ICTopicDiscussionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D26FE212AA6E900795A92 /* ICTopicDiscussionController.swift */; };
 		EC4D2701212AA6E900795A92 /* ICTopicDiscussionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4D26FF212AA6E900795A92 /* ICTopicDiscussionController.xib */; };
@@ -112,6 +114,8 @@
 		EC2FB5E2212C093000D08CE0 /* ICView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICView.swift; sourceTree = "<group>"; };
 		EC2FB5E4212C097200D08CE0 /* ICPersonalCenterHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICPersonalCenterHeader.swift; sourceTree = "<group>"; };
 		EC2FB5E6212C098D00D08CE0 /* ICPersonalCenterHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICPersonalCenterHeader.xib; sourceTree = "<group>"; };
+		EC38D2A6212FB02A008B91E7 /* ICMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICMessageController.swift; sourceTree = "<group>"; };
+		EC38D2A7212FB02A008B91E7 /* ICMessageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICMessageController.xib; sourceTree = "<group>"; };
 		EC4D26F7212A6C1500795A92 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		EC4D26FE212AA6E900795A92 /* ICTopicDiscussionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTopicDiscussionController.swift; sourceTree = "<group>"; };
 		EC4D26FF212AA6E900795A92 /* ICTopicDiscussionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICTopicDiscussionController.xib; sourceTree = "<group>"; };
@@ -327,6 +331,23 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		EC38D2A4212FAFDC008B91E7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				EC38D2A5212FB009008B91E7 /* Controller */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		EC38D2A5212FB009008B91E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC38D2A6212FB02A008B91E7 /* ICMessageController.swift */,
+				EC38D2A7212FB02A008B91E7 /* ICMessageController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EC4D26F6212A6BC900795A92 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,6 +520,7 @@
 				EC0678B62123D40E00DF0466 /* Public */,
 				ECA2C4102122ABBA0011EFD3 /* Module */,
 				ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */,
+				EC38D2A4212FAFDC008B91E7 /* Message */,
 				ECA2C3E92122A9AA0011EFD3 /* Assets.xcassets */,
 				ECA2C3EB2122A9AA0011EFD3 /* LaunchScreen.storyboard */,
 				ECA2C3EE2122A9AA0011EFD3 /* Info.plist */,
@@ -738,6 +760,7 @@
 				EC2FB5E7212C098D00D08CE0 /* ICPersonalCenterHeader.xib in Resources */,
 				EC4D270A212AA77500795A92 /* ICTopicDiscussionCell.xib in Resources */,
 				EC099CD2212669980002AA65 /* ICTopicListViewCell.xib in Resources */,
+				EC38D2A9212FB02A008B91E7 /* ICMessageController.xib in Resources */,
 				ECA2C3ED2122A9AA0011EFD3 /* LaunchScreen.storyboard in Resources */,
 				EC0678C52124044900DF0466 /* ICPersonalCenterController.xib in Resources */,
 				EC4D2716212ABFA600795A92 /* ICPersonalCenterCell.xib in Resources */,
@@ -872,6 +895,7 @@
 				EC4D26F8212A6C1500795A92 /* UIViewController+DismissKeyboard.swift in Sources */,
 				EC4D2718212ABFB900795A92 /* ICPersonalCenterView.swift in Sources */,
 				ECA2C4232122CEE10011EFD3 /* ICCollectionView.swift in Sources */,
+				EC38D2A8212FB02A008B91E7 /* ICMessageController.swift in Sources */,
 				EC59807E21256C4300547E3E /* ICInnListCellModel.swift in Sources */,
 				EC099CD92126B21C0002AA65 /* ICTopicListController.swift in Sources */,
 				ECA2C4162122B1580011EFD3 /* ICViewController.swift in Sources */,

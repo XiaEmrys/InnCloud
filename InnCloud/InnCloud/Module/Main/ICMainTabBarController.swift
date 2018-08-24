@@ -23,8 +23,9 @@ class ICMainTabBarController: UITabBarController {
     
     private func initialChildren() {
         
-        addChildInnController(ICRecommendationController(), tabBarTitle: "发现", imageName: "icon_home_unclick", selectedImage: "icon_home_light")
         addChildInnController(ICPertinentController(), tabBarTitle: "入驻", imageName: "icon_special_unclick", selectedImage: "icon_special_click")
+        addChildInnController(ICRecommendationController(), tabBarTitle: "发现", imageName: "icon_home_unclick", selectedImage: "icon_home_light")
+        addChildInnController(ICMessageController(), tabBarTitle: "消息", imageName: "icon_mes_dark", selectedImage: "icon_mes_light")
         addChildInnController(ICPersonalCenterController(), tabBarTitle: "我", imageName: "icon_mine_unclick", selectedImage: "icon_mine_click")
     }
     

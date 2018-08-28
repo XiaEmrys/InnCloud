@@ -15,8 +15,8 @@ class ICTableView: UITableView {
     private var didSlectedCellClosures: ((_ indexPath: NSIndexPath)->())?
     private var viewForSectionHeader: ((_ indexPath: NSIndexPath)->())?
     
-    convenience init(frame: CGRect, listDataSource: ICListDataSource) {
-        self.init(frame: frame, style: .plain)
+    convenience init(frame: CGRect, style: UITableViewStyle, listDataSource: ICListDataSource) {
+        self.init(frame: frame, style: style)
         
         self.listDataSource = listDataSource
         self.separatorStyle = .none
@@ -24,6 +24,11 @@ class ICTableView: UITableView {
         dataSource = self
         delegate = self
     }
+    
+    convenience init(frame: CGRect, listDataSource: ICListDataSource) {
+        self.init(frame: frame, style: .plain, listDataSource: listDataSource)
+    }
+
     
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
@@ -53,9 +58,9 @@ extension ICTableView: UITableViewDataSource, UITableViewDelegate {
             didSlectedCellClosures!(indexPath as NSIndexPath)
         }
     }
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return nil
-    }
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        return nil
+//    }
 //    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
 //        return nil
 //    }

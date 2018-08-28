@@ -520,7 +520,6 @@
 				EC0678B62123D40E00DF0466 /* Public */,
 				ECA2C4102122ABBA0011EFD3 /* Module */,
 				ECA2C3DF2122A9A90011EFD3 /* AppDelegate.swift */,
-				EC38D2A4212FAFDC008B91E7 /* Message */,
 				ECA2C3E92122A9AA0011EFD3 /* Assets.xcassets */,
 				ECA2C3EB2122A9AA0011EFD3 /* LaunchScreen.storyboard */,
 				ECA2C3EE2122A9AA0011EFD3 /* Info.plist */,
@@ -556,6 +555,7 @@
 				EC4D270D212AB68400795A92 /* Topic */,
 				ECA2C41C2122BDE80011EFD3 /* Recommendation */,
 				EC0678BA212402ED00DF0466 /* Pertinent */,
+				EC38D2A4212FAFDC008B91E7 /* Message */,
 				EC0678C02124040F00DF0466 /* PersonalCenter */,
 			);
 			path = Module;

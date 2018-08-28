@@ -12,7 +12,7 @@ class ICPersonalCenterView: ICTableView {
 
     static func personalCenterView(frame: CGRect) -> ICPersonalCenterView {
         
-        let personalCenterView = ICPersonalCenterView(frame: frame, listDataSource: ICPersonalCenterDataSource())
+        let personalCenterView = ICPersonalCenterView(frame: frame, style: .grouped, listDataSource: ICPersonalCenterDataSource())
         
 //        personalCenterView.listDataSource = ICPersonalCenterDataSource()
         

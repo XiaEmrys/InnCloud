@@ -17,7 +17,7 @@ class ICInnListView: ICCollectionView {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: (UIScreen.main.bounds.size.width - 3*innItemMargin)/2-1 , height: 150);
         
-        layout.sectionInset = UIEdgeInsetsMake(innItemMargin, innItemMargin, innItemMargin, innItemMargin)
+        layout.sectionInset = UIEdgeInsets.init(top: innItemMargin, left: innItemMargin, bottom: innItemMargin, right: innItemMargin)
         layout.scrollDirection = .vertical
         
         let innListView = ICInnListView(frame: frame, layout: layout, listDataSource: ICInnListDataSource())

@@ -21,7 +21,7 @@ class ICTopicListView: ICTableView {
         topicListView.register(UINib(nibName: "ICTopicListViewCell", bundle: nil), forCellReuseIdentifier: ICTopicListViewCell.identifierForCell())
         
         topicListView.estimatedRowHeight = 44
-        topicListView.rowHeight = UITableViewAutomaticDimension
+        topicListView.rowHeight = UITableView.automaticDimension
         
         return topicListView
     }

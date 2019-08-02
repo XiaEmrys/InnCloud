@@ -21,7 +21,7 @@ class ICTopicDiscussionView: ICTableView {
         topicDiscussionView.register(UINib(nibName: "ICTopicDiscussionCell", bundle: nil), forCellReuseIdentifier: ICTopicDiscussionCell.identifierForCell())
         
         topicDiscussionView.estimatedRowHeight = 44
-        topicDiscussionView.rowHeight = UITableViewAutomaticDimension
+        topicDiscussionView.rowHeight = UITableView.automaticDimension
         
         let titleHeader = ICTopicDiscussionTitleHeader.titleHeader()
         

@@ -34,7 +34,7 @@ class ICMainTabBarController: UITabBarController {
         childController.tabBarItem.image = UIImage(named: imageName)
         childController.tabBarItem.selectedImage = UIImage(named: selectedImage)
         
-        addChildViewController(ICNavigationControllerr(rootViewController: childController))
+        addChild(ICNavigationControllerr(rootViewController: childController))
     }
     
     override func viewDidLoad() {

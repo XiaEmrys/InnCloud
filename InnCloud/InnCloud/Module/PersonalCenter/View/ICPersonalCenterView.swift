@@ -21,7 +21,7 @@ class ICPersonalCenterView: ICTableView {
         personalCenterView.register(UINib(nibName: "ICPersonalCenterCell", bundle: nil), forCellReuseIdentifier: ICPersonalCenterCell.identifierForCell())
         
         personalCenterView.estimatedRowHeight = 44
-        personalCenterView.rowHeight = UITableViewAutomaticDimension
+        personalCenterView.rowHeight = UITableView.automaticDimension
         
         personalCenterView.tableHeaderView = ICPersonalCenterHeader.personalCenterHeader()
         

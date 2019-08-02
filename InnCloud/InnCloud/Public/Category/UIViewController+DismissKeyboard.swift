@@ -13,10 +13,10 @@ extension UIViewController {
         
         let singleTapGR = UITapGestureRecognizer(target: self, action: #selector(self.tapAnywhereToDismissKeyboard(_:)))
         
-        NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification) in
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: OperationQueue.main) { (notification) in
             self.view.addGestureRecognizer(singleTapGR)
         }
-        NotificationCenter.default.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (notification) in
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: OperationQueue.main) { (notification) in
             self.view.removeGestureRecognizer(singleTapGR)
         }
     }

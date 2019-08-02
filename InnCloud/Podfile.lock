@@ -1,16 +1,85 @@
 PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - LLDebugTool (1.2.2):
+    - LLDebugTool/AppInfo (= 1.2.2)
+    - LLDebugTool/Crash (= 1.2.2)
+    - LLDebugTool/General (= 1.2.2)
+    - LLDebugTool/Log (= 1.2.2)
+    - LLDebugTool/Network (= 1.2.2)
+    - LLDebugTool/Sandbox (= 1.2.2)
+    - LLDebugTool/Screenshot (= 1.2.2)
+    - LLDebugTool/StorageManager (= 1.2.2)
+  - LLDebugTool/AppInfo (1.2.2):
+    - LLDebugTool/General
+  - LLDebugTool/Crash (1.2.2):
+    - LLDebugTool/StorageManager
+  - LLDebugTool/General (1.2.2)
+  - LLDebugTool/Log (1.2.2):
+    - LLDebugTool/StorageManager
+  - LLDebugTool/Network (1.2.2):
+    - LLDebugTool/StorageManager
+  - LLDebugTool/Sandbox (1.2.2):
+    - LLDebugTool/General
+  - LLDebugTool/Screenshot (1.2.2):
+    - LLDebugTool/General
+  - LLDebugTool/StorageManager (1.2.2):
+    - FMDB
+    - LLDebugTool/General
+  - LLDebugToolSwift (1.2.2):
+    - LLDebugTool (= 1.2.2)
+    - LLDebugToolSwift/AppInfo (= 1.2.2)
+    - LLDebugToolSwift/Crash (= 1.2.2)
+    - LLDebugToolSwift/General (= 1.2.2)
+    - LLDebugToolSwift/Log (= 1.2.2)
+    - LLDebugToolSwift/Network (= 1.2.2)
+    - LLDebugToolSwift/Sandbox (= 1.2.2)
+    - LLDebugToolSwift/Screenshot (= 1.2.2)
+    - LLDebugToolSwift/StorageManager (= 1.2.2)
+  - LLDebugToolSwift/AppInfo (1.2.2):
+    - LLDebugTool (= 1.2.2)
+    - LLDebugTool/AppInfo (= 1.2.2)
+  - LLDebugToolSwift/Crash (1.2.2):
+    - LLDebugTool (= 1.2.2)
+    - LLDebugTool/Crash (= 1.2.2)
+  - LLDebugToolSwift/General (1.2.2):
+    - LLDebugTool (= 1.2.2)
+    - LLDebugTool/General (= 1.2.2)
+  - LLDebugToolSwift/Log (1.2.2):
+    - LLDebugTool (= 1.2.2)
+    - LLDebugTool/Log (= 1.2.2)
+  - LLDebugToolSwift/Network (1.2.2):
+    - LLDebugTool (= 1.2.2)
+    - LLDebugTool/Network (= 1.2.2)
+  - LLDebugToolSwift/Sandbox (1.2.2):
+    - LLDebugTool (= 1.2.2)
+    - LLDebugTool/Sandbox (= 1.2.2)
+  - LLDebugToolSwift/Screenshot (1.2.2):
+    - LLDebugTool (= 1.2.2)
+    - LLDebugTool/Screenshot (= 1.2.2)
+  - LLDebugToolSwift/StorageManager (1.2.2):
+    - LLDebugTool (= 1.2.2)
+    - LLDebugTool/StorageManager (= 1.2.2)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - LLDebugToolSwift
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FMDB
+    - LLDebugTool
+    - LLDebugToolSwift
     - SnapKit
 
 SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  LLDebugTool: 37e600681126878a2e398508e4ee82678aef21f2
+  LLDebugToolSwift: 2f5eef33ed985823909c0993154d4ac5769a6af4
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 226879f4f53a85ebdde031542ee8bf64b610fcc0
+PODFILE CHECKSUM: 4517130903a46876f51ee8373152ed7a54d213be
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.4

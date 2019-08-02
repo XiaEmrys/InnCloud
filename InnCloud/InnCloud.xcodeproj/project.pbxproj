@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -718,13 +718,16 @@
 				TargetAttributes = {
 					ECA2C3DB2122A9A90011EFD3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 					};
 					ECA2C3F22122A9AA0011EFD3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = ECA2C3DB2122A9A90011EFD3;
 					};
 					ECA2C3FD2122A9AA0011EFD3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = ECA2C3DB2122A9A90011EFD3;
 					};
 				};
@@ -794,17 +797,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-InnCloud/Pods-InnCloud-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InnCloud/Pods-InnCloud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InnCloud/Pods-InnCloud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InnCloud/Pods-InnCloud-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InnCloud/Pods-InnCloud-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4440D516460BACE7261AC5F3 /* [CP] Check Pods Manifest.lock */ = {
@@ -1079,7 +1081,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1097,7 +1099,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1117,7 +1119,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloudTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InnCloud.app/InnCloud";
 			};
@@ -1138,7 +1140,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloudTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InnCloud.app/InnCloud";
 			};
@@ -1158,7 +1160,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloudUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = InnCloud;
 			};
@@ -1178,7 +1180,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Emrys.InnCloudUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = InnCloud;
 			};

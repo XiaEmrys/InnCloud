@@ -15,7 +15,7 @@ class ICTableView: UITableView {
     private var didSlectedCellClosures: ((_ indexPath: NSIndexPath)->())?
     private var viewForSectionHeader: ((_ indexPath: NSIndexPath)->())?
     
-    convenience init(frame: CGRect, style: UITableViewStyle, listDataSource: ICListDataSource) {
+    convenience init(frame: CGRect, style: UITableView.Style, listDataSource: ICListDataSource) {
         self.init(frame: frame, style: style)
         
         self.listDataSource = listDataSource
@@ -30,7 +30,7 @@ class ICTableView: UITableView {
     }
 
     
-    override init(frame: CGRect, style: UITableViewStyle) {
+    override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
     }
     

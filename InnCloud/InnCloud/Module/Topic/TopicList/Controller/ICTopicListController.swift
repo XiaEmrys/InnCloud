@@ -42,12 +42,18 @@ class ICTopicListController: ICViewController {
             self.navigationController!.pushViewController(vc, animated: true)
         }
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "发帖", style: .plain, target: self, action: #selector(test))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "柜台", style: .plain, target: self, action: #selector(counterDidClickLogic))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - test
+    @objc func counterDidClickLogic() {
+        
+        self.navigationController!.pushViewController(ICViewController(), animated: true)
     }
     
     // MARK: - test
